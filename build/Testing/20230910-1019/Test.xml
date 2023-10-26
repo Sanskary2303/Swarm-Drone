@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20230910-1019-Experimental"
+	Name="sanskar-VivoBook-ASUSLaptop-X513UA-KM513UA"
+	Generator="ctest-3.20.0"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="sanskar-VivoBook-ASUSLaptop-X513UA-KM513UA"
+	OSRelease="5.15.0-78-generic"
+	OSVersion="#85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="104"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15364"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1700"
+	>
+	<Testing>
+		<StartDateTime>Sep 10 15:49 IST</StartDateTime>
+		<StartTestTime>1694341149</StartTestTime>
+		<TestList/>
+		<EndDateTime>Sep 10 15:49 IST</EndDateTime>
+		<EndTestTime>1694341149</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

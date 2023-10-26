@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/sanskar/Workspaces/swarm_ws/src/Object-Detection-via-ROS-Darknet/build/gtest/lib ../lib/libgtestd.so -lpthread 

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sanskar/Workspaces/swarm_ws/src/Object-Detection-via-ROS-Darknet/build/devel/setup.sh

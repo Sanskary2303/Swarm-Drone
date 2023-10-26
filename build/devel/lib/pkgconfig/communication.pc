@@ -1,0 +1,8 @@
+prefix=/home/sanskar/Workspaces/swarm_ws/src/Object-Detection-via-ROS-Darknet/build/devel
+
+Name: communication
+Description: Description of communication
+Version: 0.0.0
+Cflags: -I/home/sanskar/Workspaces/swarm_ws/src/Object-Detection-via-ROS-Darknet/communication/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2081 @@
+... logging to /home/sanskar/.ros/log/aa848aa6-6e8c-11ee-a9b9-a7e096c865a6/roslaunch-sanskar-16971.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/sanskar/Workspaces/swarm_ws/src/Object-Detection-via-ROS-Darknet/communication/launch/apm.launch
+[1mstarted roslaunch server http://sanskar:33417/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /drone1/mavros/
+ * /drone2/mavros/
+ * /drone3/mavros/
+ * /drone4/mavros/
+ * /drone5/mavros/
+
+PARAMETERS
+ * /drone1/mavros/cmd/use_comp_id_system_control: False
+ * /drone1/mavros/conn/heartbeat_mav_type: ONBOARD_CONTROLLER
+ * /drone1/mavros/conn/heartbeat_rate: 1.0
+ * /drone1/mavros/conn/system_time_rate: 1.0
+ * /drone1/mavros/conn/timeout: 10.0
+ * /drone1/mavros/conn/timesync_rate: 0.0
+ * /drone1/mavros/distance_sensor/rangefinder_pub/field_of_view: 0.0
+ * /drone1/mavros/distance_sensor/rangefinder_pub/frame_id: lidar
+ * /drone1/mavros/distance_sensor/rangefinder_pub/id: 0
+ * /drone1/mavros/distance_sensor/rangefinder_pub/send_tf: False
+ * /drone1/mavros/distance_sensor/rangefinder_pub/sensor_position/x: 0.0
+ * /drone1/mavros/distance_sensor/rangefinder_pub/sensor_position/y: 0.0
+ * /drone1/mavros/distance_sensor/rangefinder_pub/sensor_position/z: -0.1
+ * /drone1/mavros/distance_sensor/rangefinder_sub/id: 1
+ * /drone1/mavros/distance_sensor/rangefinder_sub/orientation: PITCH_270
+ * /drone1/mavros/distance_sensor/rangefinder_sub/subscriber: True
+ * /drone1/mavros/fake_gps/eph: 2.0
+ * /drone1/mavros/fake_gps/epv: 2.0
+ * /drone1/mavros/fake_gps/fix_type: 3
+ * /drone1/mavros/fake_gps/geo_origin/alt: 408.0
+ * /drone1/mavros/fake_gps/geo_origin/lat: 47.3667
+ * /drone1/mavros/fake_gps/geo_origin/lon: 8.55
+ * /drone1/mavros/fake_gps/gps_id: 4
+ * /drone1/mavros/fake_gps/gps_rate: 5.0
+ * /drone1/mavros/fake_gps/horiz_accuracy: 0.5
+ * /drone1/mavros/fake_gps/mocap_transform: False
+ * /drone1/mavros/fake_gps/mocap_withcovariance: False
+ * /drone1/mavros/fake_gps/satellites_visible: 6
+ * /drone1/mavros/fake_gps/speed_accuracy: 0.0
+ * /drone1/mavros/fake_gps/tf/child_frame_id: fix
+ * /drone1/mavros/fake_gps/tf/frame_id: map
+ * /drone1/mavros/fake_gps/tf/listen: False
+ * /drone1/mavros/fake_gps/tf/rate_limit: 10.0
+ * /drone1/mavros/fake_gps/tf/send: False
+ * /drone1/mavros/fake_gps/use_hil_gps: True
+ * /drone1/mavros/fake_gps/use_mocap: True
+ * /drone1/mavros/fake_gps/use_vision: False
+ * /drone1/mavros/fake_gps/vert_accuracy: 0.5
+ * /drone1/mavros/fcu_protocol: v2.0
+ * /drone1/mavros/fcu_url: udp://127.0.0.1:1...
+ * /drone1/mavros/gcs_url: 
+ * /drone1/mavros/global_position/child_frame_id: base_link
+ * /drone1/mavros/global_position/frame_id: map
+ * /drone1/mavros/global_position/gps_uere: 1.0
+ * /drone1/mavros/global_position/rot_covariance: 99999.0
+ * /drone1/mavros/global_position/tf/child_frame_id: base_link
+ * /drone1/mavros/global_position/tf/frame_id: map
+ * /drone1/mavros/global_position/tf/global_frame_id: earth
+ * /drone1/mavros/global_position/tf/send: False
+ * /drone1/mavros/global_position/use_relative_alt: True
+ * /drone1/mavros/guided_target/tf/child_frame_id: target_position
+ * /drone1/mavros/guided_target/tf/frame_id: map
+ * /drone1/mavros/guided_target/tf/listen: False
+ * /drone1/mavros/guided_target/tf/rate_limit: 50.0
+ * /drone1/mavros/image/frame_id: px4flow
+ * /drone1/mavros/imu/angular_velocity_stdev: 0.0003490659 // 0...
+ * /drone1/mavros/imu/frame_id: base_link
+ * /drone1/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /drone1/mavros/imu/magnetic_stdev: 0.0
+ * /drone1/mavros/imu/orientation_stdev: 1.0
+ * /drone1/mavros/landing_target/camera/fov_x: 2.0071286398
+ * /drone1/mavros/landing_target/camera/fov_y: 2.0071286398
+ * /drone1/mavros/landing_target/image/height: 480
+ * /drone1/mavros/landing_target/image/width: 640
+ * /drone1/mavros/landing_target/land_target_type: VISION_FIDUCIAL
+ * /drone1/mavros/landing_target/listen_lt: False
+ * /drone1/mavros/landing_target/mav_frame: LOCAL_NED
+ * /drone1/mavros/landing_target/target_size/x: 0.3
+ * /drone1/mavros/landing_target/target_size/y: 0.3
+ * /drone1/mavros/landing_target/tf/child_frame_id: camera_center
+ * /drone1/mavros/landing_target/tf/frame_id: landing_target
+ * /drone1/mavros/landing_target/tf/listen: False
+ * /drone1/mavros/landing_target/tf/rate_limit: 10.0
+ * /drone1/mavros/landing_target/tf/send: True
+ * /drone1/mavros/local_position/frame_id: map
+ * /drone1/mavros/local_position/tf/child_frame_id: base_link
+ * /drone1/mavros/local_position/tf/frame_id: map
+ * /drone1/mavros/local_position/tf/send: False
+ * /drone1/mavros/local_position/tf/send_fcu: False
+ * /drone1/mavros/mavros/conn/timesync_rate: 0.0
+ * /drone1/mavros/mission/pull_after_gcs: True
+ * /drone1/mavros/mission/use_mission_item_int: True
+ * /drone1/mavros/mocap/use_pose: True
+ * /drone1/mavros/mocap/use_tf: False
+ * /drone1/mavros/mount/debounce_s: 4.0
+ * /drone1/mavros/mount/err_threshold_deg: 10.0
+ * /drone1/mavros/mount/negate_measured_pitch: False
+ * /drone1/mavros/mount/negate_measured_roll: False
+ * /drone1/mavros/mount/negate_measured_yaw: False
+ * /drone1/mavros/odometry/estimator_type: 3
+ * /drone1/mavros/odometry/frame_tf/desired_frame: ned
+ * /drone1/mavros/plugin_blacklist: ['actuator_contro...
+ * /drone1/mavros/plugin_whitelist: []
+ * /drone1/mavros/px4flow/frame_id: px4flow
+ * /drone1/mavros/px4flow/ranger_fov: 0.118682
+ * /drone1/mavros/px4flow/ranger_max_range: 5.0
+ * /drone1/mavros/px4flow/ranger_min_range: 0.3
+ * /drone1/mavros/safety_area/p1/x: 1.0
+ * /drone1/mavros/safety_area/p1/y: 1.0
+ * /drone1/mavros/safety_area/p1/z: 1.0
+ * /drone1/mavros/safety_area/p2/x: -1.0
+ * /drone1/mavros/safety_area/p2/y: -1.0
+ * /drone1/mavros/safety_area/p2/z: -1.0
+ * /drone1/mavros/setpoint_accel/send_force: False
+ * /drone1/mavros/setpoint_attitude/reverse_thrust: False
+ * /drone1/mavros/setpoint_attitude/tf/child_frame_id: target_attitude
+ * /drone1/mavros/setpoint_attitude/tf/frame_id: map
+ * /drone1/mavros/setpoint_attitude/tf/listen: False
+ * /drone1/mavros/setpoint_attitude/tf/rate_limit: 50.0
+ * /drone1/mavros/setpoint_attitude/use_quaternion: False
+ * /drone1/mavros/setpoint_position/mav_frame: LOCAL_NED
+ * /drone1/mavros/setpoint_position/tf/child_frame_id: target_position
+ * /drone1/mavros/setpoint_position/tf/frame_id: map
+ * /drone1/mavros/setpoint_position/tf/listen: False
+ * /drone1/mavros/setpoint_position/tf/rate_limit: 50.0
+ * /drone1/mavros/setpoint_raw/thrust_scaling: 1.0
+ * /drone1/mavros/setpoint_velocity/mav_frame: LOCAL_NED
+ * /drone1/mavros/startup_px4_usb_quirk: False
+ * /drone1/mavros/sys/disable_diag: False
+ * /drone1/mavros/sys/min_voltage: 10.0
+ * /drone1/mavros/target_component_id: 1
+ * /drone1/mavros/target_system_id: 1
+ * /drone1/mavros/tdr_radio/low_rssi: 40
+ * /drone1/mavros/time/time_ref_source: fcu
+ * /drone1/mavros/time/timesync_avg_alpha: 0.6
+ * /drone1/mavros/time/timesync_mode: MAVLINK
+ * /drone1/mavros/vibration/frame_id: base_link
+ * /drone1/mavros/vision_pose/tf/child_frame_id: vision_estimate
+ * /drone1/mavros/vision_pose/tf/frame_id: map
+ * /drone1/mavros/vision_pose/tf/listen: False
+ * /drone1/mavros/vision_pose/tf/rate_limit: 10.0
+ * /drone1/mavros/vision_speed/listen_twist: True
+ * /drone1/mavros/vision_speed/twist_cov: True
+ * /drone1/mavros/wheel_odometry/child_frame_id: base_link
+ * /drone1/mavros/wheel_odometry/count: 2
+ * /drone1/mavros/wheel_odometry/frame_id: map
+ * /drone1/mavros/wheel_odometry/send_raw: True
+ * /drone1/mavros/wheel_odometry/send_twist: False
+ * /drone1/mavros/wheel_odometry/tf/child_frame_id: base_link
+ * /drone1/mavros/wheel_odometry/tf/frame_id: map
+ * /drone1/mavros/wheel_odometry/tf/send: True
+ * /drone1/mavros/wheel_odometry/use_rpm: False
+ * /drone1/mavros/wheel_odometry/vel_error: 0.1
+ * /drone1/mavros/wheel_odometry/wheel0/radius: 0.05
+ * /drone1/mavros/wheel_odometry/wheel0/x: 0.0
+ * /drone1/mavros/wheel_odometry/wheel0/y: -0.15
+ * /drone1/mavros/wheel_odometry/wheel1/radius: 0.05
+ * /drone1/mavros/wheel_odometry/wheel1/x: 0.0
+ * /drone1/mavros/wheel_odometry/wheel1/y: 0.15
+ * /drone2/mavros/cmd/use_comp_id_system_control: False
+ * /drone2/mavros/conn/heartbeat_mav_type: ONBOARD_CONTROLLER
+ * /drone2/mavros/conn/heartbeat_rate: 1.0
+ * /drone2/mavros/conn/system_time_rate: 1.0
+ * /drone2/mavros/conn/timeout: 10.0
+ * /drone2/mavros/conn/timesync_rate: 0.0
+ * /drone2/mavros/distance_sensor/rangefinder_pub/field_of_view: 0.0
+ * /drone2/mavros/distance_sensor/rangefinder_pub/frame_id: lidar
+ * /drone2/mavros/distance_sensor/rangefinder_pub/id: 0
+ * /drone2/mavros/distance_sensor/rangefinder_pub/send_tf: False
+ * /drone2/mavros/distance_sensor/rangefinder_pub/sensor_position/x: 0.0
+ * /drone2/mavros/distance_sensor/rangefinder_pub/sensor_position/y: 0.0
+ * /drone2/mavros/distance_sensor/rangefinder_pub/sensor_position/z: -0.1
+ * /drone2/mavros/distance_sensor/rangefinder_sub/id: 1
+ * /drone2/mavros/distance_sensor/rangefinder_sub/orientation: PITCH_270
+ * /drone2/mavros/distance_sensor/rangefinder_sub/subscriber: True
+ * /drone2/mavros/fake_gps/eph: 2.0
+ * /drone2/mavros/fake_gps/epv: 2.0
+ * /drone2/mavros/fake_gps/fix_type: 3
+ * /drone2/mavros/fake_gps/geo_origin/alt: 408.0
+ * /drone2/mavros/fake_gps/geo_origin/lat: 47.3667
+ * /drone2/mavros/fake_gps/geo_origin/lon: 8.55
+ * /drone2/mavros/fake_gps/gps_id: 4
+ * /drone2/mavros/fake_gps/gps_rate: 5.0
+ * /drone2/mavros/fake_gps/horiz_accuracy: 0.5
+ * /drone2/mavros/fake_gps/mocap_transform: False
+ * /drone2/mavros/fake_gps/mocap_withcovariance: False
+ * /drone2/mavros/fake_gps/satellites_visible: 6
+ * /drone2/mavros/fake_gps/speed_accuracy: 0.0
+ * /drone2/mavros/fake_gps/tf/child_frame_id: fix
+ * /drone2/mavros/fake_gps/tf/frame_id: map
+ * /drone2/mavros/fake_gps/tf/listen: False
+ * /drone2/mavros/fake_gps/tf/rate_limit: 10.0
+ * /drone2/mavros/fake_gps/tf/send: False
+ * /drone2/mavros/fake_gps/use_hil_gps: True
+ * /drone2/mavros/fake_gps/use_mocap: True
+ * /drone2/mavros/fake_gps/use_vision: False
+ * /drone2/mavros/fake_gps/vert_accuracy: 0.5
+ * /drone2/mavros/fcu_protocol: v2.0
+ * /drone2/mavros/fcu_url: udp://127.0.0.1:1...
+ * /drone2/mavros/gcs_url: 
+ * /drone2/mavros/global_position/child_frame_id: base_link
+ * /drone2/mavros/global_position/frame_id: map
+ * /drone2/mavros/global_position/gps_uere: 1.0
+ * /drone2/mavros/global_position/rot_covariance: 99999.0
+ * /drone2/mavros/global_position/tf/child_frame_id: base_link
+ * /drone2/mavros/global_position/tf/frame_id: map
+ * /drone2/mavros/global_position/tf/global_frame_id: earth
+ * /drone2/mavros/global_position/tf/send: False
+ * /drone2/mavros/global_position/use_relative_alt: True
+ * /drone2/mavros/guided_target/tf/child_frame_id: target_position
+ * /drone2/mavros/guided_target/tf/frame_id: map
+ * /drone2/mavros/guided_target/tf/listen: False
+ * /drone2/mavros/guided_target/tf/rate_limit: 50.0
+ * /drone2/mavros/image/frame_id: px4flow
+ * /drone2/mavros/imu/angular_velocity_stdev: 0.0003490659 // 0...
+ * /drone2/mavros/imu/frame_id: base_link
+ * /drone2/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /drone2/mavros/imu/magnetic_stdev: 0.0
+ * /drone2/mavros/imu/orientation_stdev: 1.0
+ * /drone2/mavros/landing_target/camera/fov_x: 2.0071286398
+ * /drone2/mavros/landing_target/camera/fov_y: 2.0071286398
+ * /drone2/mavros/landing_target/image/height: 480
+ * /drone2/mavros/landing_target/image/width: 640
+ * /drone2/mavros/landing_target/land_target_type: VISION_FIDUCIAL
+ * /drone2/mavros/landing_target/listen_lt: False
+ * /drone2/mavros/landing_target/mav_frame: LOCAL_NED
+ * /drone2/mavros/landing_target/target_size/x: 0.3
+ * /drone2/mavros/landing_target/target_size/y: 0.3
+ * /drone2/mavros/landing_target/tf/child_frame_id: camera_center
+ * /drone2/mavros/landing_target/tf/frame_id: landing_target
+ * /drone2/mavros/landing_target/tf/listen: False
+ * /drone2/mavros/landing_target/tf/rate_limit: 10.0
+ * /drone2/mavros/landing_target/tf/send: True
+ * /drone2/mavros/local_position/frame_id: map
+ * /drone2/mavros/local_position/tf/child_frame_id: base_link
+ * /drone2/mavros/local_position/tf/frame_id: map
+ * /drone2/mavros/local_position/tf/send: False
+ * /drone2/mavros/local_position/tf/send_fcu: False
+ * /drone2/mavros/mission/pull_after_gcs: True
+ * /drone2/mavros/mission/use_mission_item_int: True
+ * /drone2/mavros/mocap/use_pose: True
+ * /drone2/mavros/mocap/use_tf: False
+ * /drone2/mavros/mount/debounce_s: 4.0
+ * /drone2/mavros/mount/err_threshold_deg: 10.0
+ * /drone2/mavros/mount/negate_measured_pitch: False
+ * /drone2/mavros/mount/negate_measured_roll: False
+ * /drone2/mavros/mount/negate_measured_yaw: False
+ * /drone2/mavros/odometry/estimator_type: 3
+ * /drone2/mavros/odometry/frame_tf/desired_frame: ned
+ * /drone2/mavros/plugin_blacklist: ['actuator_contro...
+ * /drone2/mavros/plugin_whitelist: []
+ * /drone2/mavros/px4flow/frame_id: px4flow
+ * /drone2/mavros/px4flow/ranger_fov: 0.118682
+ * /drone2/mavros/px4flow/ranger_max_range: 5.0
+ * /drone2/mavros/px4flow/ranger_min_range: 0.3
+ * /drone2/mavros/safety_area/p1/x: 1.0
+ * /drone2/mavros/safety_area/p1/y: 1.0
+ * /drone2/mavros/safety_area/p1/z: 1.0
+ * /drone2/mavros/safety_area/p2/x: -1.0
+ * /drone2/mavros/safety_area/p2/y: -1.0
+ * /drone2/mavros/safety_area/p2/z: -1.0
+ * /drone2/mavros/setpoint_accel/send_force: False
+ * /drone2/mavros/setpoint_attitude/reverse_thrust: False
+ * /drone2/mavros/setpoint_attitude/tf/child_frame_id: target_attitude
+ * /drone2/mavros/setpoint_attitude/tf/frame_id: map
+ * /drone2/mavros/setpoint_attitude/tf/listen: False
+ * /drone2/mavros/setpoint_attitude/tf/rate_limit: 50.0
+ * /drone2/mavros/setpoint_attitude/use_quaternion: False
+ * /drone2/mavros/setpoint_position/mav_frame: LOCAL_NED
+ * /drone2/mavros/setpoint_position/tf/child_frame_id: target_position
+ * /drone2/mavros/setpoint_position/tf/frame_id: map
+ * /drone2/mavros/setpoint_position/tf/listen: False
+ * /drone2/mavros/setpoint_position/tf/rate_limit: 50.0
+ * /drone2/mavros/setpoint_raw/thrust_scaling: 1.0
+ * /drone2/mavros/setpoint_velocity/mav_frame: LOCAL_NED
+ * /drone2/mavros/startup_px4_usb_quirk: False
+ * /drone2/mavros/sys/disable_diag: False
+ * /drone2/mavros/sys/min_voltage: 10.0
+ * /drone2/mavros/target_component_id: 1
+ * /drone2/mavros/target_system_id: 2
+ * /drone2/mavros/tdr_radio/low_rssi: 40
+ * /drone2/mavros/time/time_ref_source: fcu
+ * /drone2/mavros/time/timesync_avg_alpha: 0.6
+ * /drone2/mavros/time/timesync_mode: MAVLINK
+ * /drone2/mavros/vibration/frame_id: base_link
+ * /drone2/mavros/vision_pose/tf/child_frame_id: vision_estimate
+ * /drone2/mavros/vision_pose/tf/frame_id: map
+ * /drone2/mavros/vision_pose/tf/listen: False
+ * /drone2/mavros/vision_pose/tf/rate_limit: 10.0
+ * /drone2/mavros/vision_speed/listen_twist: True
+ * /drone2/mavros/vision_speed/twist_cov: True
+ * /drone2/mavros/wheel_odometry/child_frame_id: base_link
+ * /drone2/mavros/wheel_odometry/count: 2
+ * /drone2/mavros/wheel_odometry/frame_id: map
+ * /drone2/mavros/wheel_odometry/send_raw: True
+ * /drone2/mavros/wheel_odometry/send_twist: False
+ * /drone2/mavros/wheel_odometry/tf/child_frame_id: base_link
+ * /drone2/mavros/wheel_odometry/tf/frame_id: map
+ * /drone2/mavros/wheel_odometry/tf/send: True
+ * /drone2/mavros/wheel_odometry/use_rpm: False
+ * /drone2/mavros/wheel_odometry/vel_error: 0.1
+ * /drone2/mavros/wheel_odometry/wheel0/radius: 0.05
+ * /drone2/mavros/wheel_odometry/wheel0/x: 0.0
+ * /drone2/mavros/wheel_odometry/wheel0/y: -0.15
+ * /drone2/mavros/wheel_odometry/wheel1/radius: 0.05
+ * /drone2/mavros/wheel_odometry/wheel1/x: 0.0
+ * /drone2/mavros/wheel_odometry/wheel1/y: 0.15
+ * /drone3/mavros/cmd/use_comp_id_system_control: False
+ * /drone3/mavros/conn/heartbeat_mav_type: ONBOARD_CONTROLLER
+ * /drone3/mavros/conn/heartbeat_rate: 1.0
+ * /drone3/mavros/conn/system_time_rate: 1.0
+ * /drone3/mavros/conn/timeout: 10.0
+ * /drone3/mavros/conn/timesync_rate: 0.0
+ * /drone3/mavros/distance_sensor/rangefinder_pub/field_of_view: 0.0
+ * /drone3/mavros/distance_sensor/rangefinder_pub/frame_id: lidar
+ * /drone3/mavros/distance_sensor/rangefinder_pub/id: 0
+ * /drone3/mavros/distance_sensor/rangefinder_pub/send_tf: False
+ * /drone3/mavros/distance_sensor/rangefinder_pub/sensor_position/x: 0.0
+ * /drone3/mavros/distance_sensor/rangefinder_pub/sensor_position/y: 0.0
+ * /drone3/mavros/distance_sensor/rangefinder_pub/sensor_position/z: -0.1
+ * /drone3/mavros/distance_sensor/rangefinder_sub/id: 1
+ * /drone3/mavros/distance_sensor/rangefinder_sub/orientation: PITCH_270
+ * /drone3/mavros/distance_sensor/rangefinder_sub/subscriber: True
+ * /drone3/mavros/fake_gps/eph: 2.0
+ * /drone3/mavros/fake_gps/epv: 2.0
+ * /drone3/mavros/fake_gps/fix_type: 3
+ * /drone3/mavros/fake_gps/geo_origin/alt: 408.0
+ * /drone3/mavros/fake_gps/geo_origin/lat: 47.3667
+ * /drone3/mavros/fake_gps/geo_origin/lon: 8.55
+ * /drone3/mavros/fake_gps/gps_id: 4
+ * /drone3/mavros/fake_gps/gps_rate: 5.0
+ * /drone3/mavros/fake_gps/horiz_accuracy: 0.5
+ * /drone3/mavros/fake_gps/mocap_transform: False
+ * /drone3/mavros/fake_gps/mocap_withcovariance: False
+ * /drone3/mavros/fake_gps/satellites_visible: 6
+ * /drone3/mavros/fake_gps/speed_accuracy: 0.0
+ * /drone3/mavros/fake_gps/tf/child_frame_id: fix
+ * /drone3/mavros/fake_gps/tf/frame_id: map
+ * /drone3/mavros/fake_gps/tf/listen: False
+ * /drone3/mavros/fake_gps/tf/rate_limit: 10.0
+ * /drone3/mavros/fake_gps/tf/send: False
+ * /drone3/mavros/fake_gps/use_hil_gps: True
+ * /drone3/mavros/fake_gps/use_mocap: True
+ * /drone3/mavros/fake_gps/use_vision: False
+ * /drone3/mavros/fake_gps/vert_accuracy: 0.5
+ * /drone3/mavros/fcu_protocol: v2.0
+ * /drone3/mavros/fcu_url: udp://127.0.0.1:1...
+ * /drone3/mavros/gcs_url: 
+ * /drone3/mavros/global_position/child_frame_id: base_link
+ * /drone3/mavros/global_position/frame_id: map
+ * /drone3/mavros/global_position/gps_uere: 1.0
+ * /drone3/mavros/global_position/rot_covariance: 99999.0
+ * /drone3/mavros/global_position/tf/child_frame_id: base_link
+ * /drone3/mavros/global_position/tf/frame_id: map
+ * /drone3/mavros/global_position/tf/global_frame_id: earth
+ * /drone3/mavros/global_position/tf/send: False
+ * /drone3/mavros/global_position/use_relative_alt: True
+ * /drone3/mavros/guided_target/tf/child_frame_id: target_position
+ * /drone3/mavros/guided_target/tf/frame_id: map
+ * /drone3/mavros/guided_target/tf/listen: False
+ * /drone3/mavros/guided_target/tf/rate_limit: 50.0
+ * /drone3/mavros/image/frame_id: px4flow
+ * /drone3/mavros/imu/angular_velocity_stdev: 0.0003490659 // 0...
+ * /drone3/mavros/imu/frame_id: base_link
+ * /drone3/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /drone3/mavros/imu/magnetic_stdev: 0.0
+ * /drone3/mavros/imu/orientation_stdev: 1.0
+ * /drone3/mavros/landing_target/camera/fov_x: 2.0071286398
+ * /drone3/mavros/landing_target/camera/fov_y: 2.0071286398
+ * /drone3/mavros/landing_target/image/height: 480
+ * /drone3/mavros/landing_target/image/width: 640
+ * /drone3/mavros/landing_target/land_target_type: VISION_FIDUCIAL
+ * /drone3/mavros/landing_target/listen_lt: False
+ * /drone3/mavros/landing_target/mav_frame: LOCAL_NED
+ * /drone3/mavros/landing_target/target_size/x: 0.3
+ * /drone3/mavros/landing_target/target_size/y: 0.3
+ * /drone3/mavros/landing_target/tf/child_frame_id: camera_center
+ * /drone3/mavros/landing_target/tf/frame_id: landing_target
+ * /drone3/mavros/landing_target/tf/listen: False
+ * /drone3/mavros/landing_target/tf/rate_limit: 10.0
+ * /drone3/mavros/landing_target/tf/send: True
+ * /drone3/mavros/local_position/frame_id: map
+ * /drone3/mavros/local_position/tf/child_frame_id: base_link
+ * /drone3/mavros/local_position/tf/frame_id: map
+ * /drone3/mavros/local_position/tf/send: False
+ * /drone3/mavros/local_position/tf/send_fcu: False
+ * /drone3/mavros/mission/pull_after_gcs: True
+ * /drone3/mavros/mission/use_mission_item_int: True
+ * /drone3/mavros/mocap/use_pose: True
+ * /drone3/mavros/mocap/use_tf: False
+ * /drone3/mavros/mount/debounce_s: 4.0
+ * /drone3/mavros/mount/err_threshold_deg: 10.0
+ * /drone3/mavros/mount/negate_measured_pitch: False
+ * /drone3/mavros/mount/negate_measured_roll: False
+ * /drone3/mavros/mount/negate_measured_yaw: False
+ * /drone3/mavros/odometry/estimator_type: 3
+ * /drone3/mavros/odometry/frame_tf/desired_frame: ned
+ * /drone3/mavros/plugin_blacklist: ['actuator_contro...
+ * /drone3/mavros/plugin_whitelist: []
+ * /drone3/mavros/px4flow/frame_id: px4flow
+ * /drone3/mavros/px4flow/ranger_fov: 0.118682
+ * /drone3/mavros/px4flow/ranger_max_range: 5.0
+ * /drone3/mavros/px4flow/ranger_min_range: 0.3
+ * /drone3/mavros/safety_area/p1/x: 1.0
+ * /drone3/mavros/safety_area/p1/y: 1.0
+ * /drone3/mavros/safety_area/p1/z: 1.0
+ * /drone3/mavros/safety_area/p2/x: -1.0
+ * /drone3/mavros/safety_area/p2/y: -1.0
+ * /drone3/mavros/safety_area/p2/z: -1.0
+ * /drone3/mavros/setpoint_accel/send_force: False
+ * /drone3/mavros/setpoint_attitude/reverse_thrust: False
+ * /drone3/mavros/setpoint_attitude/tf/child_frame_id: target_attitude
+ * /drone3/mavros/setpoint_attitude/tf/frame_id: map
+ * /drone3/mavros/setpoint_attitude/tf/listen: False
+ * /drone3/mavros/setpoint_attitude/tf/rate_limit: 50.0
+ * /drone3/mavros/setpoint_attitude/use_quaternion: False
+ * /drone3/mavros/setpoint_position/mav_frame: LOCAL_NED
+ * /drone3/mavros/setpoint_position/tf/child_frame_id: target_position
+ * /drone3/mavros/setpoint_position/tf/frame_id: map
+ * /drone3/mavros/setpoint_position/tf/listen: False
+ * /drone3/mavros/setpoint_position/tf/rate_limit: 50.0
+ * /drone3/mavros/setpoint_raw/thrust_scaling: 1.0
+ * /drone3/mavros/setpoint_velocity/mav_frame: LOCAL_NED
+ * /drone3/mavros/startup_px4_usb_quirk: False
+ * /drone3/mavros/sys/disable_diag: False
+ * /drone3/mavros/sys/min_voltage: 10.0
+ * /drone3/mavros/target_component_id: 1
+ * /drone3/mavros/target_system_id: 3
+ * /drone3/mavros/tdr_radio/low_rssi: 40
+ * /drone3/mavros/time/time_ref_source: fcu
+ * /drone3/mavros/time/timesync_avg_alpha: 0.6
+ * /drone3/mavros/time/timesync_mode: MAVLINK
+ * /drone3/mavros/vibration/frame_id: base_link
+ * /drone3/mavros/vision_pose/tf/child_frame_id: vision_estimate
+ * /drone3/mavros/vision_pose/tf/frame_id: map
+ * /drone3/mavros/vision_pose/tf/listen: False
+ * /drone3/mavros/vision_pose/tf/rate_limit: 10.0
+ * /drone3/mavros/vision_speed/listen_twist: True
+ * /drone3/mavros/vision_speed/twist_cov: True
+ * /drone3/mavros/wheel_odometry/child_frame_id: base_link
+ * /drone3/mavros/wheel_odometry/count: 2
+ * /drone3/mavros/wheel_odometry/frame_id: map
+ * /drone3/mavros/wheel_odometry/send_raw: True
+ * /drone3/mavros/wheel_odometry/send_twist: False
+ * /drone3/mavros/wheel_odometry/tf/child_frame_id: base_link
+ * /drone3/mavros/wheel_odometry/tf/frame_id: map
+ * /drone3/mavros/wheel_odometry/tf/send: True
+ * /drone3/mavros/wheel_odometry/use_rpm: False
+ * /drone3/mavros/wheel_odometry/vel_error: 0.1
+ * /drone3/mavros/wheel_odometry/wheel0/radius: 0.05
+ * /drone3/mavros/wheel_odometry/wheel0/x: 0.0
+ * /drone3/mavros/wheel_odometry/wheel0/y: -0.15
+ * /drone3/mavros/wheel_odometry/wheel1/radius: 0.05
+ * /drone3/mavros/wheel_odometry/wheel1/x: 0.0
+ * /drone3/mavros/wheel_odometry/wheel1/y: 0.15
+ * /drone4/mavros/cmd/use_comp_id_system_control: False
+ * /drone4/mavros/conn/heartbeat_mav_type: ONBOARD_CONTROLLER
+ * /drone4/mavros/conn/heartbeat_rate: 1.0
+ * /drone4/mavros/conn/system_time_rate: 1.0
+ * /drone4/mavros/conn/timeout: 10.0
+ * /drone4/mavros/conn/timesync_rate: 0.0
+ * /drone4/mavros/distance_sensor/rangefinder_pub/field_of_view: 0.0
+ * /drone4/mavros/distance_sensor/rangefinder_pub/frame_id: lidar
+ * /drone4/mavros/distance_sensor/rangefinder_pub/id: 0
+ * /drone4/mavros/distance_sensor/rangefinder_pub/send_tf: False
+ * /drone4/mavros/distance_sensor/rangefinder_pub/sensor_position/x: 0.0
+ * /drone4/mavros/distance_sensor/rangefinder_pub/sensor_position/y: 0.0
+ * /drone4/mavros/distance_sensor/rangefinder_pub/sensor_position/z: -0.1
+ * /drone4/mavros/distance_sensor/rangefinder_sub/id: 1
+ * /drone4/mavros/distance_sensor/rangefinder_sub/orientation: PITCH_270
+ * /drone4/mavros/distance_sensor/rangefinder_sub/subscriber: True
+ * /drone4/mavros/fake_gps/eph: 2.0
+ * /drone4/mavros/fake_gps/epv: 2.0
+ * /drone4/mavros/fake_gps/fix_type: 3
+ * /drone4/mavros/fake_gps/geo_origin/alt: 408.0
+ * /drone4/mavros/fake_gps/geo_origin/lat: 47.3667
+ * /drone4/mavros/fake_gps/geo_origin/lon: 8.55
+ * /drone4/mavros/fake_gps/gps_id: 4
+ * /drone4/mavros/fake_gps/gps_rate: 5.0
+ * /drone4/mavros/fake_gps/horiz_accuracy: 0.5
+ * /drone4/mavros/fake_gps/mocap_transform: False
+ * /drone4/mavros/fake_gps/mocap_withcovariance: False
+ * /drone4/mavros/fake_gps/satellites_visible: 6
+ * /drone4/mavros/fake_gps/speed_accuracy: 0.0
+ * /drone4/mavros/fake_gps/tf/child_frame_id: fix
+ * /drone4/mavros/fake_gps/tf/frame_id: map
+ * /drone4/mavros/fake_gps/tf/listen: False
+ * /drone4/mavros/fake_gps/tf/rate_limit: 10.0
+ * /drone4/mavros/fake_gps/tf/send: False
+ * /drone4/mavros/fake_gps/use_hil_gps: True
+ * /drone4/mavros/fake_gps/use_mocap: True
+ * /drone4/mavros/fake_gps/use_vision: False
+ * /drone4/mavros/fake_gps/vert_accuracy: 0.5
+ * /drone4/mavros/fcu_protocol: v2.0
+ * /drone4/mavros/fcu_url: udp://127.0.0.1:1...
+ * /drone4/mavros/gcs_url: 
+ * /drone4/mavros/global_position/child_frame_id: base_link
+ * /drone4/mavros/global_position/frame_id: map
+ * /drone4/mavros/global_position/gps_uere: 1.0
+ * /drone4/mavros/global_position/rot_covariance: 99999.0
+ * /drone4/mavros/global_position/tf/child_frame_id: base_link
+ * /drone4/mavros/global_position/tf/frame_id: map
+ * /drone4/mavros/global_position/tf/global_frame_id: earth
+ * /drone4/mavros/global_position/tf/send: False
+ * /drone4/mavros/global_position/use_relative_alt: True
+ * /drone4/mavros/guided_target/tf/child_frame_id: target_position
+ * /drone4/mavros/guided_target/tf/frame_id: map
+ * /drone4/mavros/guided_target/tf/listen: False
+ * /drone4/mavros/guided_target/tf/rate_limit: 50.0
+ * /drone4/mavros/image/frame_id: px4flow
+ * /drone4/mavros/imu/angular_velocity_stdev: 0.0003490659 // 0...
+ * /drone4/mavros/imu/frame_id: base_link
+ * /drone4/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /drone4/mavros/imu/magnetic_stdev: 0.0
+ * /drone4/mavros/imu/orientation_stdev: 1.0
+ * /drone4/mavros/landing_target/camera/fov_x: 2.0071286398
+ * /drone4/mavros/landing_target/camera/fov_y: 2.0071286398
+ * /drone4/mavros/landing_target/image/height: 480
+ * /drone4/mavros/landing_target/image/width: 640
+ * /drone4/mavros/landing_target/land_target_type: VISION_FIDUCIAL
+ * /drone4/mavros/landing_target/listen_lt: False
+ * /drone4/mavros/landing_target/mav_frame: LOCAL_NED
+ * /drone4/mavros/landing_target/target_size/x: 0.3
+ * /drone4/mavros/landing_target/target_size/y: 0.3
+ * /drone4/mavros/landing_target/tf/child_frame_id: camera_center
+ * /drone4/mavros/landing_target/tf/frame_id: landing_target
+ * /drone4/mavros/landing_target/tf/listen: False
+ * /drone4/mavros/landing_target/tf/rate_limit: 10.0
+ * /drone4/mavros/landing_target/tf/send: True
+ * /drone4/mavros/local_position/frame_id: map
+ * /drone4/mavros/local_position/tf/child_frame_id: base_link
+ * /drone4/mavros/local_position/tf/frame_id: map
+ * /drone4/mavros/local_position/tf/send: False
+ * /drone4/mavros/local_position/tf/send_fcu: False
+ * /drone4/mavros/mission/pull_after_gcs: True
+ * /drone4/mavros/mission/use_mission_item_int: True
+ * /drone4/mavros/mocap/use_pose: True
+ * /drone4/mavros/mocap/use_tf: False
+ * /drone4/mavros/mount/debounce_s: 4.0
+ * /drone4/mavros/mount/err_threshold_deg: 10.0
+ * /drone4/mavros/mount/negate_measured_pitch: False
+ * /drone4/mavros/mount/negate_measured_roll: False
+ * /drone4/mavros/mount/negate_measured_yaw: False
+ * /drone4/mavros/odometry/estimator_type: 3
+ * /drone4/mavros/odometry/frame_tf/desired_frame: ned
+ * /drone4/mavros/plugin_blacklist: ['actuator_contro...
+ * /drone4/mavros/plugin_whitelist: []
+ * /drone4/mavros/px4flow/frame_id: px4flow
+ * /drone4/mavros/px4flow/ranger_fov: 0.118682
+ * /drone4/mavros/px4flow/ranger_max_range: 5.0
+ * /drone4/mavros/px4flow/ranger_min_range: 0.3
+ * /drone4/mavros/safety_area/p1/x: 1.0
+ * /drone4/mavros/safety_area/p1/y: 1.0
+ * /drone4/mavros/safety_area/p1/z: 1.0
+ * /drone4/mavros/safety_area/p2/x: -1.0
+ * /drone4/mavros/safety_area/p2/y: -1.0
+ * /drone4/mavros/safety_area/p2/z: -1.0
+ * /drone4/mavros/setpoint_accel/send_force: False
+ * /drone4/mavros/setpoint_attitude/reverse_thrust: False
+ * /drone4/mavros/setpoint_attitude/tf/child_frame_id: target_attitude
+ * /drone4/mavros/setpoint_attitude/tf/frame_id: map
+ * /drone4/mavros/setpoint_attitude/tf/listen: False
+ * /drone4/mavros/setpoint_attitude/tf/rate_limit: 50.0
+ * /drone4/mavros/setpoint_attitude/use_quaternion: False
+ * /drone4/mavros/setpoint_position/mav_frame: LOCAL_NED
+ * /drone4/mavros/setpoint_position/tf/child_frame_id: target_position
+ * /drone4/mavros/setpoint_position/tf/frame_id: map
+ * /drone4/mavros/setpoint_position/tf/listen: False
+ * /drone4/mavros/setpoint_position/tf/rate_limit: 50.0
+ * /drone4/mavros/setpoint_raw/thrust_scaling: 1.0
+ * /drone4/mavros/setpoint_velocity/mav_frame: LOCAL_NED
+ * /drone4/mavros/startup_px4_usb_quirk: False
+ * /drone4/mavros/sys/disable_diag: False
+ * /drone4/mavros/sys/min_voltage: 10.0
+ * /drone4/mavros/target_component_id: 1
+ * /drone4/mavros/target_system_id: 4
+ * /drone4/mavros/tdr_radio/low_rssi: 40
+ * /drone4/mavros/time/time_ref_source: fcu
+ * /drone4/mavros/time/timesync_avg_alpha: 0.6
+ * /drone4/mavros/time/timesync_mode: MAVLINK
+ * /drone4/mavros/vibration/frame_id: base_link
+ * /drone4/mavros/vision_pose/tf/child_frame_id: vision_estimate
+ * /drone4/mavros/vision_pose/tf/frame_id: map
+ * /drone4/mavros/vision_pose/tf/listen: False
+ * /drone4/mavros/vision_pose/tf/rate_limit: 10.0
+ * /drone4/mavros/vision_speed/listen_twist: True
+ * /drone4/mavros/vision_speed/twist_cov: True
+ * /drone4/mavros/wheel_odometry/child_frame_id: base_link
+ * /drone4/mavros/wheel_odometry/count: 2
+ * /drone4/mavros/wheel_odometry/frame_id: map
+ * /drone4/mavros/wheel_odometry/send_raw: True
+ * /drone4/mavros/wheel_odometry/send_twist: False
+ * /drone4/mavros/wheel_odometry/tf/child_frame_id: base_link
+ * /drone4/mavros/wheel_odometry/tf/frame_id: map
+ * /drone4/mavros/wheel_odometry/tf/send: True
+ * /drone4/mavros/wheel_odometry/use_rpm: False
+ * /drone4/mavros/wheel_odometry/vel_error: 0.1
+ * /drone4/mavros/wheel_odometry/wheel0/radius: 0.05
+ * /drone4/mavros/wheel_odometry/wheel0/x: 0.0
+ * /drone4/mavros/wheel_odometry/wheel0/y: -0.15
+ * /drone4/mavros/wheel_odometry/wheel1/radius: 0.05
+ * /drone4/mavros/wheel_odometry/wheel1/x: 0.0
+ * /drone4/mavros/wheel_odometry/wheel1/y: 0.15
+ * /drone5/mavros/cmd/use_comp_id_system_control: False
+ * /drone5/mavros/conn/heartbeat_mav_type: ONBOARD_CONTROLLER
+ * /drone5/mavros/conn/heartbeat_rate: 1.0
+ * /drone5/mavros/conn/system_time_rate: 1.0
+ * /drone5/mavros/conn/timeout: 10.0
+ * /drone5/mavros/conn/timesync_rate: 0.0
+ * /drone5/mavros/distance_sensor/rangefinder_pub/field_of_view: 0.0
+ * /drone5/mavros/distance_sensor/rangefinder_pub/frame_id: lidar
+ * /drone5/mavros/distance_sensor/rangefinder_pub/id: 0
+ * /drone5/mavros/distance_sensor/rangefinder_pub/send_tf: False
+ * /drone5/mavros/distance_sensor/rangefinder_pub/sensor_position/x: 0.0
+ * /drone5/mavros/distance_sensor/rangefinder_pub/sensor_position/y: 0.0
+ * /drone5/mavros/distance_sensor/rangefinder_pub/sensor_position/z: -0.1
+ * /drone5/mavros/distance_sensor/rangefinder_sub/id: 1
+ * /drone5/mavros/distance_sensor/rangefinder_sub/orientation: PITCH_270
+ * /drone5/mavros/distance_sensor/rangefinder_sub/subscriber: True
+ * /drone5/mavros/fake_gps/eph: 2.0
+ * /drone5/mavros/fake_gps/epv: 2.0
+ * /drone5/mavros/fake_gps/fix_type: 3
+ * /drone5/mavros/fake_gps/geo_origin/alt: 408.0
+ * /drone5/mavros/fake_gps/geo_origin/lat: 47.3667
+ * /drone5/mavros/fake_gps/geo_origin/lon: 8.55
+ * /drone5/mavros/fake_gps/gps_id: 4
+ * /drone5/mavros/fake_gps/gps_rate: 5.0
+ * /drone5/mavros/fake_gps/horiz_accuracy: 0.5
+ * /drone5/mavros/fake_gps/mocap_transform: False
+ * /drone5/mavros/fake_gps/mocap_withcovariance: False
+ * /drone5/mavros/fake_gps/satellites_visible: 6
+ * /drone5/mavros/fake_gps/speed_accuracy: 0.0
+ * /drone5/mavros/fake_gps/tf/child_frame_id: fix
+ * /drone5/mavros/fake_gps/tf/frame_id: map
+ * /drone5/mavros/fake_gps/tf/listen: False
+ * /drone5/mavros/fake_gps/tf/rate_limit: 10.0
+ * /drone5/mavros/fake_gps/tf/send: False
+ * /drone5/mavros/fake_gps/use_hil_gps: True
+ * /drone5/mavros/fake_gps/use_mocap: True
+ * /drone5/mavros/fake_gps/use_vision: False
+ * /drone5/mavros/fake_gps/vert_accuracy: 0.5
+ * /drone5/mavros/fcu_protocol: v2.0
+ * /drone5/mavros/fcu_url: udp://127.0.0.1:1...
+ * /drone5/mavros/gcs_url: 
+ * /drone5/mavros/global_position/child_frame_id: base_link
+ * /drone5/mavros/global_position/frame_id: map
+ * /drone5/mavros/global_position/gps_uere: 1.0
+ * /drone5/mavros/global_position/rot_covariance: 99999.0
+ * /drone5/mavros/global_position/tf/child_frame_id: base_link
+ * /drone5/mavros/global_position/tf/frame_id: map
+ * /drone5/mavros/global_position/tf/global_frame_id: earth
+ * /drone5/mavros/global_position/tf/send: False
+ * /drone5/mavros/global_position/use_relative_alt: True
+ * /drone5/mavros/guided_target/tf/child_frame_id: target_position
+ * /drone5/mavros/guided_target/tf/frame_id: map
+ * /drone5/mavros/guided_target/tf/listen: False
+ * /drone5/mavros/guided_target/tf/rate_limit: 50.0
+ * /drone5/mavros/image/frame_id: px4flow
+ * /drone5/mavros/imu/angular_velocity_stdev: 0.0003490659 // 0...
+ * /drone5/mavros/imu/frame_id: base_link
+ * /drone5/mavros/imu/linear_acceleration_stdev: 0.0003
+ * /drone5/mavros/imu/magnetic_stdev: 0.0
+ * /drone5/mavros/imu/orientation_stdev: 1.0
+ * /drone5/mavros/landing_target/camera/fov_x: 2.0071286398
+ * /drone5/mavros/landing_target/camera/fov_y: 2.0071286398
+ * /drone5/mavros/landing_target/image/height: 480
+ * /drone5/mavros/landing_target/image/width: 640
+ * /drone5/mavros/landing_target/land_target_type: VISION_FIDUCIAL
+ * /drone5/mavros/landing_target/listen_lt: False
+ * /drone5/mavros/landing_target/mav_frame: LOCAL_NED
+ * /drone5/mavros/landing_target/target_size/x: 0.3
+ * /drone5/mavros/landing_target/target_size/y: 0.3
+ * /drone5/mavros/landing_target/tf/child_frame_id: camera_center
+ * /drone5/mavros/landing_target/tf/frame_id: landing_target
+ * /drone5/mavros/landing_target/tf/listen: False
+ * /drone5/mavros/landing_target/tf/rate_limit: 10.0
+ * /drone5/mavros/landing_target/tf/send: True
+ * /drone5/mavros/local_position/frame_id: map
+ * /drone5/mavros/local_position/tf/child_frame_id: base_link
+ * /drone5/mavros/local_position/tf/frame_id: map
+ * /drone5/mavros/local_position/tf/send: False
+ * /drone5/mavros/local_position/tf/send_fcu: False
+ * /drone5/mavros/mission/pull_after_gcs: True
+ * /drone5/mavros/mission/use_mission_item_int: True
+ * /drone5/mavros/mocap/use_pose: True
+ * /drone5/mavros/mocap/use_tf: False
+ * /drone5/mavros/mount/debounce_s: 4.0
+ * /drone5/mavros/mount/err_threshold_deg: 10.0
+ * /drone5/mavros/mount/negate_measured_pitch: False
+ * /drone5/mavros/mount/negate_measured_roll: False
+ * /drone5/mavros/mount/negate_measured_yaw: False
+ * /drone5/mavros/odometry/estimator_type: 3
+ * /drone5/mavros/odometry/frame_tf/desired_frame: ned
+ * /drone5/mavros/plugin_blacklist: ['actuator_contro...
+ * /drone5/mavros/plugin_whitelist: []
+ * /drone5/mavros/px4flow/frame_id: px4flow
+ * /drone5/mavros/px4flow/ranger_fov: 0.118682
+ * /drone5/mavros/px4flow/ranger_max_range: 5.0
+ * /drone5/mavros/px4flow/ranger_min_range: 0.3
+ * /drone5/mavros/safety_area/p1/x: 1.0
+ * /drone5/mavros/safety_area/p1/y: 1.0
+ * /drone5/mavros/safety_area/p1/z: 1.0
+ * /drone5/mavros/safety_area/p2/x: -1.0
+ * /drone5/mavros/safety_area/p2/y: -1.0
+ * /drone5/mavros/safety_area/p2/z: -1.0
+ * /drone5/mavros/setpoint_accel/send_force: False
+ * /drone5/mavros/setpoint_attitude/reverse_thrust: False
+ * /drone5/mavros/setpoint_attitude/tf/child_frame_id: target_attitude
+ * /drone5/mavros/setpoint_attitude/tf/frame_id: map
+ * /drone5/mavros/setpoint_attitude/tf/listen: False
+ * /drone5/mavros/setpoint_attitude/tf/rate_limit: 50.0
+ * /drone5/mavros/setpoint_attitude/use_quaternion: False
+ * /drone5/mavros/setpoint_position/mav_frame: LOCAL_NED
+ * /drone5/mavros/setpoint_position/tf/child_frame_id: target_position
+ * /drone5/mavros/setpoint_position/tf/frame_id: map
+ * /drone5/mavros/setpoint_position/tf/listen: False
+ * /drone5/mavros/setpoint_position/tf/rate_limit: 50.0
+ * /drone5/mavros/setpoint_raw/thrust_scaling: 1.0
+ * /drone5/mavros/setpoint_velocity/mav_frame: LOCAL_NED
+ * /drone5/mavros/startup_px4_usb_quirk: False
+ * /drone5/mavros/sys/disable_diag: False
+ * /drone5/mavros/sys/min_voltage: 10.0
+ * /drone5/mavros/target_component_id: 1
+ * /drone5/mavros/target_system_id: 5
+ * /drone5/mavros/tdr_radio/low_rssi: 40
+ * /drone5/mavros/time/time_ref_source: fcu
+ * /drone5/mavros/time/timesync_avg_alpha: 0.6
+ * /drone5/mavros/time/timesync_mode: MAVLINK
+ * /drone5/mavros/vibration/frame_id: base_link
+ * /drone5/mavros/vision_pose/tf/child_frame_id: vision_estimate
+ * /drone5/mavros/vision_pose/tf/frame_id: map
+ * /drone5/mavros/vision_pose/tf/listen: False
+ * /drone5/mavros/vision_pose/tf/rate_limit: 10.0
+ * /drone5/mavros/vision_speed/listen_twist: True
+ * /drone5/mavros/vision_speed/twist_cov: True
+ * /drone5/mavros/wheel_odometry/child_frame_id: base_link
+ * /drone5/mavros/wheel_odometry/count: 2
+ * /drone5/mavros/wheel_odometry/frame_id: map
+ * /drone5/mavros/wheel_odometry/send_raw: True
+ * /drone5/mavros/wheel_odometry/send_twist: False
+ * /drone5/mavros/wheel_odometry/tf/child_frame_id: base_link
+ * /drone5/mavros/wheel_odometry/tf/frame_id: map
+ * /drone5/mavros/wheel_odometry/tf/send: True
+ * /drone5/mavros/wheel_odometry/use_rpm: False
+ * /drone5/mavros/wheel_odometry/vel_error: 0.1
+ * /drone5/mavros/wheel_odometry/wheel0/radius: 0.05
+ * /drone5/mavros/wheel_odometry/wheel0/x: 0.0
+ * /drone5/mavros/wheel_odometry/wheel0/y: -0.15
+ * /drone5/mavros/wheel_odometry/wheel1/radius: 0.05
+ * /drone5/mavros/wheel_odometry/wheel1/x: 0.0
+ * /drone5/mavros/wheel_odometry/wheel1/y: 0.15
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+
+NODES
+  /drone1/
+    mavros (mavros/mavros_node)
+  /drone2/
+    mavros (mavros/mavros_node)
+  /drone3/
+    mavros (mavros/mavros_node)
+  /drone4/
+    mavros (mavros/mavros_node)
+  /drone5/
+    mavros (mavros/mavros_node)
+[0m[ INFO] [1697726094.281377705]: FCU URL: udp://127.0.0.1:14580@14585[0m
+[0m[ INFO] [1697726094.304089354]: udp0: Bind address: 127.0.0.1:14580[0m
+[0m[ INFO] [1697726094.304178752]: udp0: Remote address: 0.0.56.249:14550[0m
+[0m[ INFO] [1697726094.304258231]: GCS bridge disabled[0m
+[0m[ INFO] [1697726094.341209326]: Plugin 3dr_radio loaded[0m
+[0m[ INFO] [1697726094.357072379]: Plugin 3dr_radio initialized[0m
+[0m[ INFO] [1697726094.357135376]: Plugin actuator_control blacklisted[0m
+[0m[ INFO] [1697726094.363371742]: Plugin adsb loaded[0m
+[0m[ INFO] [1697726094.389007799]: Plugin adsb initialized[0m
+[0m[ INFO] [1697726094.389054942]: Plugin altitude blacklisted[0m
+[0m[ INFO] [1697726094.389335985]: Plugin cam_imu_sync loaded[0m
+[0m[ INFO] [1697726094.396718940]: Plugin cam_imu_sync initialized[0m
+[0m[ INFO] [1697726094.396924274]: Plugin camera loaded[0m
+[0m[ INFO] [1697726094.406945007]: Plugin camera initialized[0m
+[0m[ INFO] [1697726094.407192596]: Plugin cellular_status loaded[0m
+[0m[ INFO] [1697726094.426923057]: Plugin cellular_status initialized[0m
+[0m[ INFO] [1697726094.427142779]: Plugin command loaded[0m
+[0m[ INFO] [1697726094.491896557]: Plugin command initialized[0m
+[0m[ INFO] [1697726094.492063897]: Plugin companion_process_status loaded[0m
+[0m[ INFO] [1697726094.500165453]: Plugin companion_process_status initialized[0m
+[0m[ INFO] [1697726094.500207428]: Plugin debug_value blacklisted[0m
+[0m[ INFO] [1697726094.500339009]: Plugin distance_sensor loaded[0m
+[0m[ INFO] [1697726094.539104310]: Plugin distance_sensor initialized[0m
+[0m[ INFO] [1697726094.539412171]: Plugin esc_status loaded[0m
+[0m[ INFO] [1697726094.549537597]: Plugin esc_status initialized[0m
+[0m[ INFO] [1697726094.549707102]: Plugin esc_telemetry loaded[0m
+[0m[ INFO] [1697726094.552551611]: Plugin esc_telemetry initialized[0m
+[0m[ INFO] [1697726094.552774895]: Plugin fake_gps loaded[0m
+[0m[ INFO] [1697726094.659654122]: Plugin fake_gps initialized[0m
+[0m[ INFO] [1697726094.659709437]: Plugin ftp blacklisted[0m
+[0m[ INFO] [1697726094.659949762]: Plugin geofence loaded[0m
+[0m[ INFO] [1697726094.677175284]: Plugin geofence initialized[0m
+[0m[ INFO] [1697726094.677367139]: Plugin global_position loaded[0m
+[0m[ INFO] [1697726094.808954299]: Plugin global_position initialized[0m
+[0m[ INFO] [1697726094.809195462]: Plugin gps_input loaded[0m
+[0m[ INFO] [1697726094.820223590]: Plugin gps_input initialized[0m
+[0m[ INFO] [1697726094.820443312]: Plugin gps_rtk loaded[0m
+[0m[ INFO] [1697726094.833517659]: Plugin gps_rtk initialized[0m
+[0m[ INFO] [1697726094.833693101]: Plugin gps_status loaded[0m
+[0m[ INFO] [1697726094.853435715]: Plugin gps_status initialized[0m
+[0m[ INFO] [1697726094.853601239]: Plugin guided_target loaded[0m
+[0m[ INFO] [1697726094.881470971]: Plugin guided_target initialized[0m
+[0m[ INFO] [1697726094.881514482]: Plugin hil blacklisted[0m
+[0m[ INFO] [1697726094.881694953]: Plugin home_position loaded[0m
+[0m[ INFO] [1697726094.905147063]: Plugin home_position initialized[0m
+[0m[ INFO] [1697726094.905406036]: Plugin imu loaded[0m
+[0m[ INFO] [1697726094.977485499]: Plugin imu initialized[0m
+[0m[ INFO] [1697726094.977702218]: Plugin landing_target loaded[0m
+[0m[ INFO] [1697726095.049054700]: Plugin landing_target initialized[0m
+[0m[ INFO] [1697726095.049479547]: Plugin local_position loaded[0m
+[0m[ INFO] [1697726095.092708214]: Plugin local_position initialized[0m
+[0m[ INFO] [1697726095.092996870]: Plugin log_transfer loaded[0m
+[0m[ INFO] [1697726095.129784675]: Plugin log_transfer initialized[0m
+[0m[ INFO] [1697726095.130062365]: Plugin mag_calibration_status loaded[0m
+[0m[ INFO] [1697726095.144931153]: Plugin mag_calibration_status initialized[0m
+[0m[ INFO] [1697726095.145553232]: Plugin manual_control loaded[0m
+[0m[ INFO] [1697726095.160817183]: Plugin manual_control initialized[0m
+[0m[ INFO] [1697726095.161095991]: Plugin mocap_pose_estimate loaded[0m
+[0m[ INFO] [1697726095.176852815]: Plugin mocap_pose_estimate initialized[0m[ INFO] [1697726094.259257753]: FCU URL: udp://127.0.0.1:14560@14565[0m
+[0m[ INFO] [1697726094.276791207]: udp0: Bind address: 127.0.0.1:14560[0m
+[0m[ INFO] [1697726094.276867474]: udp0: Remote address: 0.0.56.229:14550[0m
+[0m[ INFO] [1697726094.276941436]: GCS bridge disabled[0m
+[0m[ INFO] [1697726094.319107673]: Plugin 3dr_radio loaded[0m
+[0m[ INFO] [1697726094.329327664]: Plugin 3dr_radio initialized[0m
+[0m[ INFO] [1697726094.329393385]: Plugin actuator_control blacklisted[0m
+[0m[ INFO] [1697726094.336441729]: Plugin adsb loaded[0m
+[0m[ INFO] [1697726094.363029239]: Plugin adsb initialized[0m
+[0m[ INFO] [1697726094.363101594]: Plugin altitude blacklisted[0m
+[0m[ INFO] [1697726094.363350719]: Plugin cam_imu_sync loaded[0m
+[0m[ INFO] [1697726094.368525772]: Plugin cam_imu_sync initialized[0m
+[0m[ INFO] [1697726094.368727545]: Plugin camera loaded[0m
+[0m[ INFO] [1697726094.384839583]: Plugin camera initialized[0m
+[0m[ INFO] [1697726094.385037095]: Plugin cellular_status loaded[0m
+[0m[ INFO] [1697726094.399324870]: Plugin cellular_status initialized[0m
+[0m[ INFO] [1697726094.399556325]: Plugin command loaded[0m
+[0m[ INFO] [1697726094.486527973]: Plugin command initialized[0m
+[0m[ INFO] [1697726094.486733447]: Plugin companion_process_status loaded[0m
+[0m[ INFO] [1697726094.497875906]: Plugin companion_process_status initialized[0m
+[0m[ INFO] [1697726094.497920115]: Plugin debug_value blacklisted[0m
+[0m[ INFO] [1697726094.498074884]: Plugin distance_sensor loaded[0m
+[0m[ INFO] [1697726094.541886031]: Plugin distance_sensor initialized[0m
+[0m[ INFO] [1697726094.542200877]: Plugin esc_status loaded[0m
+[0m[ INFO] [1697726094.552354029]: Plugin esc_status initialized[0m
+[0m[ INFO] [1697726094.552613630]: Plugin esc_telemetry loaded[0m
+[0m[ INFO] [1697726094.559603936]: Plugin esc_telemetry initialized[0m
+[0m[ INFO] [1697726094.559862490]: Plugin fake_gps loaded[0m
+[0m[ INFO] [1697726094.692848158]: Plugin fake_gps initialized[0m
+[0m[ INFO] [1697726094.692909688]: Plugin ftp blacklisted[0m
+[0m[ INFO] [1697726094.693190102]: Plugin geofence loaded[0m
+[0m[ INFO] [1697726094.728153296]: Plugin geofence initialized[0m
+[0m[ INFO] [1697726094.728522828]: Plugin global_position loaded[0m
+[0m[ INFO] [1697726094.832278948]: Plugin global_position initialized[0m
+[0m[ INFO] [1697726094.832459279]: Plugin gps_input loaded[0m
+[0m[ INFO] [1697726094.841976664]: Plugin gps_input initialized[0m
+[0m[ INFO] [1697726094.842182487]: Plugin gps_rtk loaded[0m
+[0m[ INFO] [1697726094.855681751]: Plugin gps_rtk initialized[0m
+[0m[ INFO] [1697726094.855871580]: Plugin gps_status loaded[0m
+[0m[ INFO] [1697726094.878241914]: Plugin gps_status initialized[0m
+[0m[ INFO] [1697726094.878433909]: Plugin guided_target loaded[0m
+[0m[ INFO] [1697726094.901961448]: Plugin guided_target initialized[0m
+[0m[ INFO] [1697726094.902047214]: Plugin hil blacklisted[0m
+[0m[ INFO] [1697726094.902319735]: Plugin home_position loaded[0m
+[0m[ INFO] [1697726094.927100792]: Plugin home_position initialized[0m
+[0m[ INFO] [1697726094.927563213]: Plugin imu loaded[0m
+[0m[ INFO] [1697726094.998260232]: Plugin imu initialized[0m
+[0m[ INFO] [1697726094.998540227]: Plugin landing_target loaded[0m
+[0m[ INFO] [1697726095.083077267]: Plugin landing_target initialized[0m
+[0m[ INFO] [1697726095.083348113]: Plugin local_position loaded[0m
+[0m[ INFO] [1697726095.147212738]: Plugin local_position initialized[0m
+[0m[ INFO] [1697726095.147489311]: Plugin log_transfer loaded[0m
+[0m[ INFO] [1697726095.181501681]: Plugin log_transfer initialized[0m
+[0m[ INFO] [1697726095.181928693]: Plugin mag_calibration_status loaded[0m
+[0m[ INFO] [1697726095.193427344]: Plugin mag_calibration_status initialized[0m
+[0m[ INFO] [1697726095.193929714]: Plugin manual_control loaded[0m
+[0m[ INFO] [1697726095.207880294]: Plugin manual_control initialized[0m
+[0m[ INFO] [1697726095.208158893]: Plugin mocap_pose_estimate loaded[0m
+[0m[ INFO] [1697726095.234396356]: Plugin mocap_pose_estimate initialized[0m[ INFO] [1697726094.290810232]: FCU URL: udp://127.0.0.1:14570@14575[0m
+[0m[ INFO] [1697726094.309624092]: udp0: Bind address: 127.0.0.1:14570[0m
+[0m[ INFO] [1697726094.309714048]: udp0: Remote address: 0.0.56.239:14550[0m
+[0m[ INFO] [1697726094.309900455]: GCS bridge disabled[0m
+[0m[ INFO] [1697726094.348271359]: Plugin 3dr_radio loaded[0m
+[0m[ INFO] [1697726094.358519427]: Plugin 3dr_radio initialized[0m
+[0m[ INFO] [1697726094.358566849]: Plugin actuator_control blacklisted[0m
+[0m[ INFO] [1697726094.365737556]: Plugin adsb loaded[0m
+[0m[ INFO] [1697726094.395098056]: Plugin adsb initialized[0m
+[0m[ INFO] [1697726094.395177815]: Plugin altitude blacklisted[0m
+[0m[ INFO] [1697726094.395512706]: Plugin cam_imu_sync loaded[0m
+[0m[ INFO] [1697726094.410312490]: Plugin cam_imu_sync initialized[0m
+[0m[ INFO] [1697726094.410506719]: Plugin camera loaded[0m
+[0m[ INFO] [1697726094.424036713]: Plugin camera initialized[0m
+[0m[ INFO] [1697726094.424244632]: Plugin cellular_status loaded[0m
+[0m[ INFO] [1697726094.436486467]: Plugin cellular_status initialized[0m
+[0m[ INFO] [1697726094.436775123]: Plugin command loaded[0m
+[0m[ INFO] [1697726094.507926391]: Plugin command initialized[0m
+[0m[ INFO] [1697726094.508129700]: Plugin companion_process_status loaded[0m
+[0m[ INFO] [1697726094.521860139]: Plugin companion_process_status initialized[0m
+[0m[ INFO] [1697726094.521939759]: Plugin debug_value blacklisted[0m
+[0m[ INFO] [1697726094.522174496]: Plugin distance_sensor loaded[0m
+[0m[ INFO] [1697726094.551432190]: Plugin distance_sensor initialized[0m
+[0m[ INFO] [1697726094.551775880]: Plugin esc_status loaded[0m
+[0m[ INFO] [1697726094.562859812]: Plugin esc_status initialized[0m
+[0m[ INFO] [1697726094.563094340]: Plugin esc_telemetry loaded[0m
+[0m[ INFO] [1697726094.569691368]: Plugin esc_telemetry initialized[0m
+[0m[ INFO] [1697726094.569999649]: Plugin fake_gps loaded[0m
+[0m[ INFO] [1697726094.706414469]: Plugin fake_gps initialized[0m
+[0m[ INFO] [1697726094.706507708]: Plugin ftp blacklisted[0m
+[0m[ INFO] [1697726094.706920123]: Plugin geofence loaded[0m
+[0m[ INFO] [1697726094.742703675]: Plugin geofence initialized[0m
+[0m[ INFO] [1697726094.742924235]: Plugin global_position loaded[0m
+[0m[ INFO] [1697726094.848522358]: Plugin global_position initialized[0m
+[0m[ INFO] [1697726094.848772531]: Plugin gps_input loaded[0m
+[0m[ INFO] [1697726094.862823822]: Plugin gps_input initialized[0m
+[0m[ INFO] [1697726094.862994166]: Plugin gps_rtk loaded[0m
+[0m[ INFO] [1697726094.879218369]: Plugin gps_rtk initialized[0m
+[0m[ INFO] [1697726094.879441444]: Plugin gps_status loaded[0m
+[0m[ INFO] [1697726094.903987273]: Plugin gps_status initialized[0m
+[0m[ INFO] [1697726094.904347237]: Plugin guided_target loaded[0m
+[0m[ INFO] [1697726094.926493240]: Plugin guided_target initialized[0m
+[0m[ INFO] [1697726094.926542478]: Plugin hil blacklisted[0m
+[0m[ INFO] [1697726094.926765762]: Plugin home_position loaded[0m
+[0m[ INFO] [1697726094.958958060]: Plugin home_position initialized[0m
+[0m[ INFO] [1697726094.959151451]: Plugin imu loaded[0m
+[0m[ INFO] [1697726095.017238779]: Plugin imu initialized[0m
+[0m[ INFO] [1697726095.017456196]: Plugin landing_target loaded[0m
+[0m[ INFO] [1697726095.126121204]: Plugin landing_target initialized[0m
+[0m[ INFO] [1697726095.126441288]: Plugin local_position loaded[0m
+[0m[ INFO] [1697726095.174669776]: Plugin local_position initialized[0m
+[0m[ INFO] [1697726095.174878672]: Plugin log_transfer loaded[0m
+[0m[ INFO] [1697726095.209546575]: Plugin log_transfer initialized[0m
+[0m[ INFO] [1697726095.209874761]: Plugin mag_calibration_status loaded[0m
+[0m[ INFO] [1697726095.224619231]: Plugin mag_calibration_status initialized[0m
+[0m[ INFO] [1697726095.224901321]: Plugin manual_control loaded[0m
+[0m[ INFO] [1697726095.243393491]: Plugin manual_control initialized[0m
+[0m[ INFO] [1697726095.243649670]: Plugin mocap_pose_estimate loaded[0m
+[0m[ INFO] [1697726095.267089628]: Plugin mocap_pose_estimate initialized[0m[ INFO] [1697726094.340319614]: FCU URL: udp://127.0.0.1:14600@14605[0m
+[0m[ INFO] [1697726094.359593521]: udp0: Bind address: 127.0.0.1:14600[0m
+[0m[ INFO] [1697726094.359688226]: udp0: Remote address: 0.0.57.13:14550[0m
+[0m[ INFO] [1697726094.359773014]: GCS bridge disabled[0m
+[0m[ INFO] [1697726094.399756281]: Plugin 3dr_radio loaded[0m
+[0m[ INFO] [1697726094.418430808]: Plugin 3dr_radio initialized[0m
+[0m[ INFO] [1697726094.418482071]: Plugin actuator_control blacklisted[0m
+[0m[ INFO] [1697726094.425681692]: Plugin adsb loaded[0m
+[0m[ INFO] [1697726094.449684085]: Plugin adsb initialized[0m
+[0m[ INFO] [1697726094.449755533]: Plugin altitude blacklisted[0m
+[0m[ INFO] [1697726094.450024214]: Plugin cam_imu_sync loaded[0m
+[0m[ INFO] [1697726094.453935762]: Plugin cam_imu_sync initialized[0m
+[0m[ INFO] [1697726094.454124893]: Plugin camera loaded[0m
+[0m[ INFO] [1697726094.458044474]: Plugin camera initialized[0m
+[0m[ INFO] [1697726094.458247084]: Plugin cellular_status loaded[0m
+[0m[ INFO] [1697726094.472237055]: Plugin cellular_status initialized[0m
+[0m[ INFO] [1697726094.472494631]: Plugin command loaded[0m
+[0m[ INFO] [1697726094.544782711]: Plugin command initialized[0m
+[0m[ INFO] [1697726094.544974566]: Plugin companion_process_status loaded[0m
+[0m[ INFO] [1697726094.554404090]: Plugin companion_process_status initialized[0m
+[0m[ INFO] [1697726094.554441595]: Plugin debug_value blacklisted[0m
+[0m[ INFO] [1697726094.554609703]: Plugin distance_sensor loaded[0m
+[0m[ INFO] [1697726094.589991737]: Plugin distance_sensor initialized[0m
+[0m[ INFO] [1697726094.590178912]: Plugin esc_status loaded[0m
+[0m[ INFO] [1697726094.595785866]: Plugin esc_status initialized[0m
+[0m[ INFO] [1697726094.596037644]: Plugin esc_telemetry loaded[0m
+[0m[ INFO] [1697726094.598725219]: Plugin esc_telemetry initialized[0m
+[0m[ INFO] [1697726094.599036154]: Plugin fake_gps loaded[0m
+[0m[ INFO] [1697726094.715121971]: Plugin fake_gps initialized[0m
+[0m[ INFO] [1697726094.715174492]: Plugin ftp blacklisted[0m
+[0m[ INFO] [1697726094.715413839]: Plugin geofence loaded[0m
+[0m[ INFO] [1697726094.750158149]: Plugin geofence initialized[0m
+[0m[ INFO] [1697726094.750467198]: Plugin global_position loaded[0m
+[0m[ INFO] [1697726094.848238731]: Plugin global_position initialized[0m
+[0m[ INFO] [1697726094.848440434]: Plugin gps_input loaded[0m
+[0m[ INFO] [1697726094.861088678]: Plugin gps_input initialized[0m
+[0m[ INFO] [1697726094.861408762]: Plugin gps_rtk loaded[0m
+[0m[ INFO] [1697726094.876848225]: Plugin gps_rtk initialized[0m
+[0m[ INFO] [1697726094.877139185]: Plugin gps_status loaded[0m
+[0m[ INFO] [1697726094.899221911]: Plugin gps_status initialized[0m
+[0m[ INFO] [1697726094.899448268]: Plugin guided_target loaded[0m
+[0m[ INFO] [1697726094.926274217]: Plugin guided_target initialized[0m
+[0m[ INFO] [1697726094.926367246]: Plugin hil blacklisted[0m
+[0m[ INFO] [1697726094.926718479]: Plugin home_position loaded[0m
+[0m[ INFO] [1697726094.963321204]: Plugin home_position initialized[0m
+[0m[ INFO] [1697726094.963782647]: Plugin imu loaded[0m
+[0m[ INFO] [1697726095.027989496]: Plugin imu initialized[0m
+[0m[ INFO] [1697726095.028254266]: Plugin landing_target loaded[0m
+[0m[ INFO] [1697726095.119180276]: Plugin landing_target initialized[0m
+[0m[ INFO] [1697726095.119404258]: Plugin local_position loaded[0m
+[0m[ INFO] [1697726095.172167002]: Plugin local_position initialized[0m
+[0m[ INFO] [1697726095.172389727]: Plugin log_transfer loaded[0m
+[0m[ INFO] [1697726095.203752167]: Plugin log_transfer initialized[0m
+[0m[ INFO] [1697726095.203924047]: Plugin mag_calibration_status loaded[0m
+[0m[ INFO] [1697726095.220815797]: Plugin mag_calibration_status initialized[0m
+[0m[ INFO] [1697726095.221146846]: Plugin manual_control loaded[0m
+[0m[ INFO] [1697726095.240541230]: Plugin manual_control initialized[0m
+[0m[ INFO] [1697726095.240822971]: Plugin mocap_pose_estimate loaded[0m
+[0m[ INFO] [1697726095.272567654]: Plugin mocap_pose_estimate initialized[[0m[ INFO] [1697726094.354796730]: FCU URL: udp://127.0.0.1:14590@14595[0m
+[0m[ INFO] [1697726094.365156893]: udp0: Bind address: 127.0.0.1:14590[0m
+[0m[ INFO] [1697726094.365272271]: udp0: Remote address: 0.0.57.3:14550[0m
+[0m[ INFO] [1697726094.365371935]: GCS bridge disabled[0m
+[0m[ INFO] [1697726094.406852258]: Plugin 3dr_radio loaded[0m
+[0m[ INFO] [1697726094.422632967]: Plugin 3dr_radio initialized[0m
+[0m[ INFO] [1697726094.422687583]: Plugin actuator_control blacklisted[0m
+[0m[ INFO] [1697726094.430665030]: Plugin adsb loaded[0m
+[0m[ INFO] [1697726094.452450511]: Plugin adsb initialized[0m
+[0m[ INFO] [1697726094.452495908]: Plugin altitude blacklisted[0m
+[0m[ INFO] [1697726094.452606537]: Plugin cam_imu_sync loaded[0m
+[0m[ INFO] [1697726094.456463749]: Plugin cam_imu_sync initialized[0m
+[0m[ INFO] [1697726094.456582060]: Plugin camera loaded[0m
+[0m[ INFO] [1697726094.460544104]: Plugin camera initialized[0m
+[0m[ INFO] [1697726094.460767388]: Plugin cellular_status loaded[0m
+[0m[ INFO] [1697726094.473211904]: Plugin cellular_status initialized[0m
+[0m[ INFO] [1697726094.473421917]: Plugin command loaded[0m
+[0m[ INFO] [1697726094.545928881]: Plugin command initialized[0m
+[0m[ INFO] [1697726094.546165435]: Plugin companion_process_status loaded[0m
+[0m[ INFO] [1697726094.558354470]: Plugin companion_process_status initialized[0m
+[0m[ INFO] [1697726094.558399588]: Plugin debug_value blacklisted[0m
+[0m[ INFO] [1697726094.558649411]: Plugin distance_sensor loaded[0m
+[0m[ INFO] [1697726094.600269836]: Plugin distance_sensor initialized[0m
+[0m[ INFO] [1697726094.600522243]: Plugin esc_status loaded[0m
+[0m[ INFO] [1697726094.612931769]: Plugin esc_status initialized[0m
+[0m[ INFO] [1697726094.613125020]: Plugin esc_telemetry loaded[0m
+[0m[ INFO] [1697726094.618166606]: Plugin esc_telemetry initialized[0m
+[0m[ INFO] [1697726094.618444296]: Plugin fake_gps loaded[0m
+[0m[ INFO] [1697726094.744617684]: Plugin fake_gps initialized[0m
+[0m[ INFO] [1697726094.744674815]: Plugin ftp blacklisted[0m
+[0m[ INFO] [1697726094.744942518]: Plugin geofence loaded[0m
+[0m[ INFO] [1697726094.778994138]: Plugin geofence initialized[0m
+[0m[ INFO] [1697726094.779246406]: Plugin global_position loaded[0m
+[0m[ INFO] [1697726094.861755455]: Plugin global_position initialized[0m
+[0m[ INFO] [1697726094.862082174]: Plugin gps_input loaded[0m
+[0m[ INFO] [1697726094.874908654]: Plugin gps_input initialized[0m
+[0m[ INFO] [1697726094.875136826]: Plugin gps_rtk loaded[0m
+[0m[ INFO] [1697726094.889337020]: Plugin gps_rtk initialized[0m
+[0m[ INFO] [1697726094.889519377]: Plugin gps_status loaded[0m
+[0m[ INFO] [1697726094.914898696]: Plugin gps_status initialized[0m
+[0m[ INFO] [1697726094.915083358]: Plugin guided_target loaded[0m
+[0m[ INFO] [1697726094.944016078]: Plugin guided_target initialized[0m
+[0m[ INFO] [1697726094.944080891]: Plugin hil blacklisted[0m
+[0m[ INFO] [1697726094.944233076]: Plugin home_position loaded[0m
+[0m[ INFO] [1697726094.976086502]: Plugin home_position initialized[0m
+[0m[ INFO] [1697726094.976298960]: Plugin imu loaded[0m
+[0m[ INFO] [1697726095.034791858]: Plugin imu initialized[0m
+[0m[ INFO] [1697726095.035020450]: Plugin landing_target loaded[0m
+[0m[ INFO] [1697726095.133229402]: Plugin landing_target initialized[0m
+[0m[ INFO] [1697726095.133477410]: Plugin local_position loaded[0m
+[0m[ INFO] [1697726095.178183088]: Plugin local_position initialized[0m
+[0m[ INFO] [1697726095.178367469]: Plugin log_transfer loaded[0m
+[0m[ INFO] [1697726095.215213942]: Plugin log_transfer initialized[0m
+[0m[ INFO] [1697726095.215404120]: Plugin mag_calibration_status loaded[0m
+[0m[ INFO] [1697726095.228360436]: Plugin mag_calibration_status initialized[0m
+[0m[ INFO] [1697726095.228713485]: Plugin manual_control loaded[0m
+[0m[ INFO] [1697726095.250682579]: Plugin manual_control initialized[0m
+[0m[ INFO] [1697726095.250920599]: Plugin mocap_pose_estimate loaded[0m
+[0m[ INFO] [1697726095.281997736]: Plugin mocap_pose_estimate initialized[0[0m
+[0m[ INFO] [1697726095.177163470]: Plugin mount_control loaded[0m
+[0m[ INFO] [1697726095.224638228]: Plugin mount_control initialized[0m
+[0m[ INFO] [1697726095.224800260]: Plugin nav_controller_output loaded[0m
+[0m[ INFO] [1697726095.232450849]: Plugin nav_controller_output initialized[0m
+[0m[ INFO] [1697726095.232772818]: Plugin obstacle_distance loaded[0m
+[0m[ INFO] [1697726095.269896213]: Plugin obstacle_distance initialized[0m
+[0m[ INFO] [1697726095.270091909]: Plugin odom loaded[0m
+[0m[ INFO] [1697726095.298475674]: Plugin odom initialized[0m
+[0m[ INFO] [1697726095.298703498]: Plugin onboard_computer_status loaded[0m
+[0m[ INFO] [1697726095.314145825]: Plugin onboard_computer_status initialized[0m
+[0m[ INFO] [1697726095.314422537]: Plugin param loaded[0m
+[0m[ INFO] [1697726095.349673129]: Plugin param initialized[0m
+[0m[ INFO] [1697726095.349993283]: Plugin play_tune loaded[0m
+[0m[ INFO] [1697726095.379330456]: Plugin play_tune initialized[0m
+[0m[ INFO] [1697726095.379419085]: Plugin px4flow blacklisted[0m
+[0m[ INFO] [1697726095.379648166]: Plugin rallypoint loaded[0m
+[0m[ INFO] [1697726095.412307634]: Plugin rallypoint initialized[0m
+[0m[ INFO] [1697726095.412521768]: Plugin rangefinder loaded[0m
+[0m[ INFO] [1697726095.418334405]: Plugin rangefinder initialized[0m
+[0m[ INFO] [1697726095.418526260]: Plugin rc_io loaded[0m
+[0m[ INFO] [1697726095.443398460]: Plugin rc_io initialized[0m
+[0m[ INFO] [1697726095.443538842]: Plugin safety_area blacklisted[0m
+[0m[ INFO] [1697726095.443798303]: Plugin setpoint_accel loaded[0m
+[0m[ INFO] [1697726095.457162843]: Plugin setpoint_accel initialized[0m
+[0m[ INFO] [1697726095.457419580]: Plugin setpoint_attitude loaded[0m
+[0m[ INFO] [1697726095.497170625]: Plugin setpoint_attitude initialized[0m
+[0m[ INFO] [1697726095.497429388]: Plugin setpoint_position loaded[0m
+[0m[ INFO] [1697726095.602752895]: Plugin setpoint_position initialized[0m
+[0m[ INFO] [1697726095.602982115]: Plugin setpoint_raw loaded[0m
+[0m[ INFO] [1697726095.680002244]: Plugin setpoint_raw initialized[0m
+[0m[ INFO] [1697726095.680276232]: Plugin setpoint_trajectory loaded[0m
+[0m[ INFO] [1697726095.727288010]: Plugin setpoint_trajectory initialized[0m
+[0m[ INFO] [1697726095.727547332]: Plugin setpoint_velocity loaded[0m
+[0m[ INFO] [1697726095.766107367]: Plugin setpoint_velocity initialized[0m
+[0m[ INFO] [1697726095.766490379]: Plugin sys_status loaded[0m
+[0m[ INFO] [1697726095.848229076]: Plugin sys_status initialized[0m
+[0m[ INFO] [1697726095.848522550]: Plugin sys_time loaded[0m
+[0m[ INFO] [1697726095.865342293]: TM: Timesync mode: MAVLINK[0m
+[0m[ INFO] [1697726095.866323987]: TM: Not publishing sim time[0m
+[0m[ INFO] [1697726095.879912089]: Plugin sys_time initialized[0m
+[0m[ INFO] [1697726095.880172668]: Plugin terrain loaded[0m
+[0m[ INFO] [1697726095.888853071]: Plugin terrain initialized[0m
+[0m[ INFO] [1697726095.889193409]: Plugin trajectory loaded[0m
+[0m[ INFO] [1697726095.924804313]: Plugin trajectory initialized[0m
+[0m[ INFO] [1697726095.925073832]: Plugin tunnel loaded[0m
+[0m[ INFO] [1697726095.948073230]: Plugin tunnel initialized[0m
+[0m[ INFO] [1697726095.948877665]: Plugin vfr_hud loaded[0m
+[0m[ INFO] [1697726095.960023616]: Plugin vfr_hud initialized[0m
+[0m[ INFO] [1697726095.960125585]: Plugin vibration blacklisted[0m
+[0m[ INFO] [1697726095.960352710]: Plugin vision_pose_estimate loaded[0m
+[0m[ INFO] [1697726095.997025137]: Plugin vision_pose_estimate initialized[0m
+[0m[ INFO] [1697726095.997144426]: Plugin vision_speed_estimate blacklisted[0m
+[0m[ INFO] [1697726095.997570460]: Plugin waypoint loaded[0m
+[0m[ INFO] [1697726096.041334115]: Plugin waypoint initialized[0m
+[0m[ INFO] [1697726096.041468490]: Plugin wheel_odometry blacklisted[0m
+[0m[ INFO] [1697726096.041712377]: Plugin wind_estimation loaded[0m
+[0m[ INFO] [1697726096.046022930]: Plugin wind_estimation initialized[0m
+[0m[ INFO] [1697726096.046356005]: Built-in SIMD instructions: SSE, SSE2[0m
+[0m[ INFO] [1697726096.04641509[0m
+[0m[ INFO] [1697726095.267484931]: Plugin mount_control loaded[0m
+[0m[ INFO] [1697726095.328627969]: Plugin mount_control initialized[0m
+[0m[ INFO] [1697726095.329097863]: Plugin nav_controller_output loaded[0m
+[0m[ INFO] [1697726095.336763538]: Plugin nav_controller_output initialized[0m
+[0m[ INFO] [1697726095.337044510]: Plugin obstacle_distance loaded[0m
+[0m[ INFO] [1697726095.352465536]: Plugin obstacle_distance initialized[0m
+[0m[ INFO] [1697726095.352746229]: Plugin odom loaded[0m
+[0m[ INFO] [1697726095.385737655]: Plugin odom initialized[0m
+[0m[ INFO] [1697726095.386079669]: Plugin onboard_computer_status loaded[0m
+[0m[ INFO] [1697726095.400515858]: Plugin onboard_computer_status initialized[0m
+[0m[ INFO] [1697726095.400895237]: Plugin param loaded[0m
+[0m[ INFO] [1697726095.432744264]: Plugin param initialized[0m
+[0m[ INFO] [1697726095.433056526]: Plugin play_tune loaded[0m
+[0m[ INFO] [1697726095.443805846]: Plugin play_tune initialized[0m
+[0m[ INFO] [1697726095.443880856]: Plugin px4flow blacklisted[0m
+[0m[ INFO] [1697726095.444101975]: Plugin rallypoint loaded[0m
+[0m[ INFO] [1697726095.473682057]: Plugin rallypoint initialized[0m
+[0m[ INFO] [1697726095.473984960]: Plugin rangefinder loaded[0m
+[0m[ INFO] [1697726095.478530042]: Plugin rangefinder initialized[0m
+[0m[ INFO] [1697726095.478843491]: Plugin rc_io loaded[0m
+[0m[ INFO] [1697726095.500703772]: Plugin rc_io initialized[0m
+[0m[ INFO] [1697726095.500777245]: Plugin safety_area blacklisted[0m
+[0m[ INFO] [1697726095.500970497]: Plugin setpoint_accel loaded[0m
+[0m[ INFO] [1697726095.519441505]: Plugin setpoint_accel initialized[0m
+[0m[ INFO] [1697726095.519757259]: Plugin setpoint_attitude loaded[0m
+[0m[ INFO] [1697726095.570724934]: Plugin setpoint_attitude initialized[0m
+[0m[ INFO] [1697726095.570970218]: Plugin setpoint_position loaded[0m
+[0m[ INFO] [1697726095.677362999]: Plugin setpoint_position initialized[0m
+[0m[ INFO] [1697726095.677603813]: Plugin setpoint_raw loaded[0m
+[0m[ INFO] [1697726095.740123150]: Plugin setpoint_raw initialized[0m
+[0m[ INFO] [1697726095.740455526]: Plugin setpoint_trajectory loaded[0m
+[0m[ INFO] [1697726095.771175074]: Plugin setpoint_trajectory initialized[0m
+[0m[ INFO] [1697726095.771438516]: Plugin setpoint_velocity loaded[0m
+[0m[ INFO] [1697726095.807469099]: Plugin setpoint_velocity initialized[0m
+[0m[ INFO] [1697726095.807829971]: Plugin sys_status loaded[0m
+[0m[ INFO] [1697726095.897370603]: Plugin sys_status initialized[0m
+[0m[ INFO] [1697726095.897647734]: Plugin sys_time loaded[0m
+[0m[ INFO] [1697726095.914944914]: TM: Timesync mode: MAVLINK[0m
+[0m[ INFO] [1697726095.915742855]: TM: Not publishing sim time[0m
+[0m[ INFO] [1697726095.928058234]: Plugin sys_time initialized[0m
+[0m[ INFO] [1697726095.928271879]: Plugin terrain loaded[0m
+[0m[ INFO] [1697726095.936186119]: Plugin terrain initialized[0m
+[0m[ INFO] [1697726095.936871964]: Plugin trajectory loaded[0m
+[0m[ INFO] [1697726095.974670727]: Plugin trajectory initialized[0m
+[0m[ INFO] [1697726095.974968810]: Plugin tunnel loaded[0m
+[0m[ INFO] [1697726095.987347047]: Plugin tunnel initialized[0m
+[0m[ INFO] [1697726095.987700306]: Plugin vfr_hud loaded[0m
+[0m[ INFO] [1697726095.993368440]: Plugin vfr_hud initialized[0m
+[0m[ INFO] [1697726095.993444637]: Plugin vibration blacklisted[0m
+[0m[ INFO] [1697726095.993702493]: Plugin vision_pose_estimate loaded[0m
+[0m[ INFO] [1697726096.033539024]: Plugin vision_pose_estimate initialized[0m
+[0m[ INFO] [1697726096.033676193]: Plugin vision_speed_estimate blacklisted[0m
+[0m[ INFO] [1697726096.033948715]: Plugin waypoint loaded[0m
+[0m[ INFO] [1697726096.059804773]: Plugin waypoint initialized[0m
+[0m[ INFO] [1697726096.059941523]: Plugin wheel_odometry blacklisted[0m
+[0m[ INFO] [1697726096.060243867]: Plugin wind_estimation loaded[0m
+[0m[ INFO] [1697726096.065037236]: Plugin wind_estimation initialized[0m
+[0m[ INFO] [1697726096.065305079]: Built-in SIMD instructions: SSE, SSE2[0m
+[0m[ INFO] [1697726096.06537219[0m
+[0m[ INFO] [1697726095.234894536]: Plugin mount_control loaded[0m
+[0m[ INFO] [1697726095.291624353]: Plugin mount_control initialized[0m
+[0m[ INFO] [1697726095.291820468]: Plugin nav_controller_output loaded[0m
+[0m[ INFO] [1697726095.298017095]: Plugin nav_controller_output initialized[0m
+[0m[ INFO] [1697726095.298366652]: Plugin obstacle_distance loaded[0m
+[0m[ INFO] [1697726095.315262312]: Plugin obstacle_distance initialized[0m
+[0m[ INFO] [1697726095.315775020]: Plugin odom loaded[0m
+[0m[ INFO] [1697726095.346288605]: Plugin odom initialized[0m
+[0m[ INFO] [1697726095.346463628]: Plugin onboard_computer_status loaded[0m
+[0m[ INFO] [1697726095.365548613]: Plugin onboard_computer_status initialized[0m
+[0m[ INFO] [1697726095.365846208]: Plugin param loaded[0m
+[0m[ INFO] [1697726095.397977535]: Plugin param initialized[0m
+[0m[ INFO] [1697726095.398193345]: Plugin play_tune loaded[0m
+[0m[ INFO] [1697726095.410933850]: Plugin play_tune initialized[0m
+[0m[ INFO] [1697726095.411005368]: Plugin px4flow blacklisted[0m
+[0m[ INFO] [1697726095.411214892]: Plugin rallypoint loaded[0m
+[0m[ INFO] [1697726095.436329932]: Plugin rallypoint initialized[0m
+[0m[ INFO] [1697726095.436608041]: Plugin rangefinder loaded[0m
+[0m[ INFO] [1697726095.441674909]: Plugin rangefinder initialized[0m
+[0m[ INFO] [1697726095.441961609]: Plugin rc_io loaded[0m
+[0m[ INFO] [1697726095.465410716]: Plugin rc_io initialized[0m
+[0m[ INFO] [1697726095.465470291]: Plugin safety_area blacklisted[0m
+[0m[ INFO] [1697726095.465649645]: Plugin setpoint_accel loaded[0m
+[0m[ INFO] [1697726095.477572723]: Plugin setpoint_accel initialized[0m
+[0m[ INFO] [1697726095.477818915]: Plugin setpoint_attitude loaded[0m
+[0m[ INFO] [1697726095.531270646]: Plugin setpoint_attitude initialized[0m
+[0m[ INFO] [1697726095.531546102]: Plugin setpoint_position loaded[0m
+[0m[ INFO] [1697726095.632002836]: Plugin setpoint_position initialized[0m
+[0m[ INFO] [1697726095.632252869]: Plugin setpoint_raw loaded[0m
+[0m[ INFO] [1697726095.693282135]: Plugin setpoint_raw initialized[0m
+[0m[ INFO] [1697726095.693551793]: Plugin setpoint_trajectory loaded[0m
+[0m[ INFO] [1697726095.736146229]: Plugin setpoint_trajectory initialized[0m
+[0m[ INFO] [1697726095.736405761]: Plugin setpoint_velocity loaded[0m
+[0m[ INFO] [1697726095.774947358]: Plugin setpoint_velocity initialized[0m
+[0m[ INFO] [1697726095.775282319]: Plugin sys_status loaded[0m
+[0m[ INFO] [1697726095.860074630]: Plugin sys_status initialized[0m
+[0m[ INFO] [1697726095.860384727]: Plugin sys_time loaded[0m
+[0m[ INFO] [1697726095.876365882]: TM: Timesync mode: MAVLINK[0m
+[0m[ INFO] [1697726095.877244070]: TM: Not publishing sim time[0m
+[0m[ INFO] [1697726095.892795559]: Plugin sys_time initialized[0m
+[0m[ INFO] [1697726095.893048456]: Plugin terrain loaded[0m
+[0m[ INFO] [1697726095.898916337]: Plugin terrain initialized[0m
+[0m[ INFO] [1697726095.899189837]: Plugin trajectory loaded[0m
+[0m[ INFO] [1697726095.941452944]: Plugin trajectory initialized[0m
+[0m[ INFO] [1697726095.941756685]: Plugin tunnel loaded[0m
+[0m[ INFO] [1697726095.968825055]: Plugin tunnel initialized[0m
+[0m[ INFO] [1697726095.969160364]: Plugin vfr_hud loaded[0m
+[0m[ INFO] [1697726095.976312493]: Plugin vfr_hud initialized[0m
+[0m[ INFO] [1697726095.976426475]: Plugin vibration blacklisted[0m
+[0m[ INFO] [1697726095.976644310]: Plugin vision_pose_estimate loaded[0m
+[0m[ INFO] [1697726096.024891027]: Plugin vision_pose_estimate initialized[0m
+[0m[ INFO] [1697726096.024938310]: Plugin vision_speed_estimate blacklisted[0m
+[0m[ INFO] [1697726096.025052361]: Plugin waypoint loaded[0m
+[0m[ INFO] [1697726096.063338758]: Plugin waypoint initialized[0m
+[0m[ INFO] [1697726096.063460772]: Plugin wheel_odometry blacklisted[0m
+[0m[ INFO] [1697726096.063723097]: Plugin wind_estimation loaded[0m
+[0m[ INFO] [1697726096.067744646]: Plugin wind_estimation initialized[0m
+[0m[ INFO] [1697726096.068038469]: Built-in SIMD instructions: SSE, SSE2[0m
+[0m[ INFO] [1697726096.068088610m
+[0m[ INFO] [1697726095.273010380]: Plugin mount_control loaded[0m
+[0m[ INFO] [1697726095.326092091]: Plugin mount_control initialized[0m
+[0m[ INFO] [1697726095.326339330]: Plugin nav_controller_output loaded[0m
+[0m[ INFO] [1697726095.333785911]: Plugin nav_controller_output initialized[0m
+[0m[ INFO] [1697726095.334082528]: Plugin obstacle_distance loaded[0m
+[0m[ INFO] [1697726095.351203847]: Plugin obstacle_distance initialized[0m
+[0m[ INFO] [1697726095.351419797]: Plugin odom loaded[0m
+[0m[ INFO] [1697726095.381010077]: Plugin odom initialized[0m
+[0m[ INFO] [1697726095.381347062]: Plugin onboard_computer_status loaded[0m
+[0m[ INFO] [1697726095.394535810]: Plugin onboard_computer_status initialized[0m
+[0m[ INFO] [1697726095.394805678]: Plugin param loaded[0m
+[0m[ INFO] [1697726095.422821309]: Plugin param initialized[0m
+[0m[ INFO] [1697726095.423180155]: Plugin play_tune loaded[0m
+[0m[ INFO] [1697726095.437989368]: Plugin play_tune initialized[0m
+[0m[ INFO] [1697726095.438057463]: Plugin px4flow blacklisted[0m
+[0m[ INFO] [1697726095.438260214]: Plugin rallypoint loaded[0m
+[0m[ INFO] [1697726095.464708738]: Plugin rallypoint initialized[0m
+[0m[ INFO] [1697726095.465032454]: Plugin rangefinder loaded[0m
+[0m[ INFO] [1697726095.469765270]: Plugin rangefinder initialized[0m
+[0m[ INFO] [1697726095.470084377]: Plugin rc_io loaded[0m
+[0m[ INFO] [1697726095.494390231]: Plugin rc_io initialized[0m
+[0m[ INFO] [1697726095.494477114]: Plugin safety_area blacklisted[0m
+[0m[ INFO] [1697726095.494653534]: Plugin setpoint_accel loaded[0m
+[0m[ INFO] [1697726095.508898007]: Plugin setpoint_accel initialized[0m
+[0m[ INFO] [1697726095.509310073]: Plugin setpoint_attitude loaded[0m
+[0m[ INFO] [1697726095.559160422]: Plugin setpoint_attitude initialized[0m
+[0m[ INFO] [1697726095.559722298]: Plugin setpoint_position loaded[0m
+[0m[ INFO] [1697726095.652579987]: Plugin setpoint_position initialized[0m
+[0m[ INFO] [1697726095.652932897]: Plugin setpoint_raw loaded[0m
+[0m[ INFO] [1697726095.718844300]: Plugin setpoint_raw initialized[0m
+[0m[ INFO] [1697726095.719118009]: Plugin setpoint_trajectory loaded[0m
+[0m[ INFO] [1697726095.750802419]: Plugin setpoint_trajectory initialized[0m
+[0m[ INFO] [1697726095.751461165]: Plugin setpoint_velocity loaded[0m
+[0m[ INFO] [1697726095.778886774]: Plugin setpoint_velocity initialized[0m
+[0m[ INFO] [1697726095.779258680]: Plugin sys_status loaded[0m
+[0m[ INFO] [1697726095.876060394]: Plugin sys_status initialized[0m
+[0m[ INFO] [1697726095.876391513]: Plugin sys_time loaded[0m
+[0m[ INFO] [1697726095.898798165]: TM: Timesync mode: MAVLINK[0m
+[0m[ INFO] [1697726095.901217339]: TM: Not publishing sim time[0m
+[0m[ INFO] [1697726095.914707872]: Plugin sys_time initialized[0m
+[0m[ INFO] [1697726095.914988845]: Plugin terrain loaded[0m
+[0m[ INFO] [1697726095.921630083]: Plugin terrain initialized[0m
+[0m[ INFO] [1697726095.922065615]: Plugin trajectory loaded[0m
+[0m[ INFO] [1697726095.971807361]: Plugin trajectory initialized[0m
+[0m[ INFO] [1697726095.972014092]: Plugin tunnel loaded[0m
+[0m[ INFO] [1697726095.990419728]: Plugin tunnel initialized[0m
+[0m[ INFO] [1697726095.990656770]: Plugin vfr_hud loaded[0m
+[0m[ INFO] [1697726096.000017221]: Plugin vfr_hud initialized[0m
+[0m[ INFO] [1697726096.000113323]: Plugin vibration blacklisted[0m
+[0m[ INFO] [1697726096.000461344]: Plugin vision_pose_estimate loaded[0m
+[0m[ INFO] [1697726096.034215789]: Plugin vision_pose_estimate initialized[0m
+[0m[ INFO] [1697726096.034298761]: Plugin vision_speed_estimate blacklisted[0m
+[0m[ INFO] [1697726096.034611791]: Plugin waypoint loaded[0m
+[0m[ INFO] [1697726096.066157426]: Plugin waypoint initialized[0m
+[0m[ INFO] [1697726096.066259045]: Plugin wheel_odometry blacklisted[0m
+[0m[ INFO] [1697726096.066478208]: Plugin wind_estimation loaded[0m
+[0m[ INFO] [1697726096.069783182]: Plugin wind_estimation initialized[0m
+[0m[ INFO] [1697726096.070174854]: Built-in SIMD instructions: SSE, SSE2[0m
+[0m[ INFO] [1697726096.070237711m
+[0m[ INFO] [1697726095.282260550]: Plugin mount_control loaded[0m
+[0m[ INFO] [1697726095.349605173]: Plugin mount_control initialized[0m
+[0m[ INFO] [1697726095.349867568]: Plugin nav_controller_output loaded[0m
+[0m[ INFO] [1697726095.353982495]: Plugin nav_controller_output initialized[0m
+[0m[ INFO] [1697726095.354452529]: Plugin obstacle_distance loaded[0m
+[0m[ INFO] [1697726095.372589974]: Plugin obstacle_distance initialized[0m
+[0m[ INFO] [1697726095.372821289]: Plugin odom loaded[0m
+[0m[ INFO] [1697726095.404846945]: Plugin odom initialized[0m
+[0m[ INFO] [1697726095.405186445]: Plugin onboard_computer_status loaded[0m
+[0m[ INFO] [1697726095.416904678]: Plugin onboard_computer_status initialized[0m
+[0m[ INFO] [1697726095.417200038]: Plugin param loaded[0m
+[0m[ INFO] [1697726095.446212099]: Plugin param initialized[0m
+[0m[ INFO] [1697726095.446438386]: Plugin play_tune loaded[0m
+[0m[ INFO] [1697726095.459731547]: Plugin play_tune initialized[0m
+[0m[ INFO] [1697726095.459818779]: Plugin px4flow blacklisted[0m
+[0m[ INFO] [1697726095.460047789]: Plugin rallypoint loaded[0m
+[0m[ INFO] [1697726095.480449778]: Plugin rallypoint initialized[0m
+[0m[ INFO] [1697726095.480718039]: Plugin rangefinder loaded[0m
+[0m[ INFO] [1697726095.486627058]: Plugin rangefinder initialized[0m
+[0m[ INFO] [1697726095.486927586]: Plugin rc_io loaded[0m
+[0m[ INFO] [1697726095.511200406]: Plugin rc_io initialized[0m
+[0m[ INFO] [1697726095.511278698]: Plugin safety_area blacklisted[0m
+[0m[ INFO] [1697726095.511452324]: Plugin setpoint_accel loaded[0m
+[0m[ INFO] [1697726095.535240932]: Plugin setpoint_accel initialized[0m
+[0m[ INFO] [1697726095.535561994]: Plugin setpoint_attitude loaded[0m
+[0m[ INFO] [1697726095.588115632]: Plugin setpoint_attitude initialized[0m
+[0m[ INFO] [1697726095.588403310]: Plugin setpoint_position loaded[0m
+[0m[ INFO] [1697726095.698231599]: Plugin setpoint_position initialized[0m
+[0m[ INFO] [1697726095.698582693]: Plugin setpoint_raw loaded[0m
+[0m[ INFO] [1697726095.761563333]: Plugin setpoint_raw initialized[0m
+[0m[ INFO] [1697726095.761955215]: Plugin setpoint_trajectory loaded[0m
+[0m[ INFO] [1697726095.797373007]: Plugin setpoint_trajectory initialized[0m
+[0m[ INFO] [1697726095.797663548]: Plugin setpoint_velocity loaded[0m
+[0m[ INFO] [1697726095.826684060]: Plugin setpoint_velocity initialized[0m
+[0m[ INFO] [1697726095.827273104]: Plugin sys_status loaded[0m
+[0m[ INFO] [1697726095.927178509]: Plugin sys_status initialized[0m
+[0m[ INFO] [1697726095.927406192]: Plugin sys_time loaded[0m
+[0m[ INFO] [1697726095.959373531]: TM: Timesync mode: MAVLINK[0m
+[0m[ INFO] [1697726095.961101482]: TM: Not publishing sim time[0m
+[0m[ INFO] [1697726095.973288561]: Plugin sys_time initialized[0m
+[0m[ INFO] [1697726095.973647617]: Plugin terrain loaded[0m
+[0m[ INFO] [1697726095.980162930]: Plugin terrain initialized[0m
+[0m[ INFO] [1697726095.980458221]: Plugin trajectory loaded[0m
+[0m[ INFO] [1697726096.024057398]: Plugin trajectory initialized[0m
+[0m[ INFO] [1697726096.024243805]: Plugin tunnel loaded[0m
+[0m[ INFO] [1697726096.039074529]: Plugin tunnel initialized[0m
+[0m[ INFO] [1697726096.039307800]: Plugin vfr_hud loaded[0m
+[0m[ INFO] [1697726096.043688335]: Plugin vfr_hud initialized[0m
+[0m[ INFO] [1697726096.043780386]: Plugin vibration blacklisted[0m
+[0m[ INFO] [1697726096.043919092]: Plugin vision_pose_estimate loaded[0m
+[0m[ INFO] [1697726096.068214819]: Plugin vision_pose_estimate initialized[0m
+[0m[ INFO] [1697726096.068306242]: Plugin vision_speed_estimate blacklisted[0m
+[0m[ INFO] [1697726096.068606421]: Plugin waypoint loaded[0m
+[0m[ INFO] [1697726096.079643629]: Plugin waypoint initialized[0m
+[0m[ INFO] [1697726096.079747483]: Plugin wheel_odometry blacklisted[0m
+[0m[ INFO] [1697726096.079924183]: Plugin wind_estimation loaded[0m
+[0m[ INFO] [1697726096.080535017]: Plugin wind_estimation initialized[0m
+[0m[ INFO] [1697726096.080702009]: Built-in SIMD instructions: SSE, SSE2[0m
+[0m[ INFO] [1697726096.080718212]6]: Built-in MAVLink package version: 2023.9.9[0m
+[0m[ INFO] [1697726096.068179759]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous matrixpilot paparazzi standard storm32 uAvionix ualberta[0m
+[0m[ INFO] [1697726096.068231232]: MAVROS started. MY ID 1.240, TARGET ID 1.1[0m
+[0m[ INFO] [1697726096.068296534]: udp0: Remote address: 127.0.0.1:37744[0m
+[0m[ INFO] [1697726096.069041115]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726096.069224659]: IMU: Raw IMU message used.[0m
+[0m[ INFO] [1697726096.070221089]: CON: Got HEARTBEAT, connected. FCU: ArduPilot[0m
+[0m[ INFO] [1697726096.075337266]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726097.082013765]: GF: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.082130541]: RP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.082188230]: WP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.082268757]: VER: 1.1: Capabilities         0x000000000000fbef[0m
+[0m[ INFO] [1697726097.082321138]: VER: 1.1: Flight software:     04050000 (a2b446c6)[0m
+[0m[ INFO] [1697726097.082351659]: VER: 1.1: Middleware software: 00000000 (        )[0m
+[0m[ INFO] [1697726097.082387488]: VER: 1.1: OS software:         00000000 (        )[0m
+[0m[ INFO] [1697726097.082442733]: VER: 1.1: Board hardware:      00000000[0m
+[0m[ INFO] [1697726097.082505590]: VER: 1.1: VID/PID:             0000:0000[0m
+[0m[ INFO] [1697726097.082547774]: VER: 1.1: UID:                 0000000000000000[0m
+[0m[ INFO] [1697726106.072079134]: HP: requesting home position[0m
+[0m[ INFO] [1697726106.093142454]: FCU: ArduCopter V4.5.0-dev (a2b446c6)[0m
+[0m[ INFO] [1697726106.097384703]: FCU: 90e9ed4eed254a7380b72036525c18f0[0m
+[0m[ INFO] [1697726106.099562923]: FCU: Frame: QUAD/X[0m
+[0m[ INFO] [1697726109.419164555]: PR: got an unsolicited param value idx=65535, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.432562200]: PR: got an unsolicited param value idx=11, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.533852575]: PR: got an unsolicited param value idx=12, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.661988526]: PR: got an unsolicited param value idx=13, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.754435137]: PR: got an unsolicited param value idx=14, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.866404084]: PR: got an unsolicited param value idx=15, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.988793957]: PR: got an unsolicited param value idx=16, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.110584171]: PR: got an unsolicited param value idx=17, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.248245331]: PR: got an unsolicited param value idx=18, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.400290999]: PR: got an unsolicited param value idx=19, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.518459297]: PR: got an unsolicited param value idx=20, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.651574188]: PR: got an unsolicited param value idx=21, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.777475279]: PR: got an unsolicited param value idx=22, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.896536851]: PR: got an unsolicited param value idx=23, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.031342328]: PR: got an unsolicited param value idx=24, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.075037403]: GF: mission received[0m
+[0m[ INFO] [1697726111.075686511]: RP: mission received[0m
+[0m[ INFO] [1697726111.079940144]: WP: mission received[0m
+[0m[ INFO] [1697726111.155072393]: PR: got an unsolicited param value idx=25, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.288903022]: PR: got an unsolicited param value idx=26, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.415418161]: PR: got an unsolicited param value idx=27, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.545384523]: PR: got an unsolicited param value id]: Built-in MAVLink package version: 2023.9.9[0m
+[0m[ INFO] [1697726096.070381934]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous matrixpilot paparazzi standard storm32 uAvionix ualberta[0m
+[0m[ INFO] [1697726096.070445351]: MAVROS started. MY ID 1.240, TARGET ID 5.1[0m
+[0m[ INFO] [1697726096.070921181]: udp0: Remote address: 127.0.0.1:45753[0m
+[0m[ INFO] [1697726096.071704385]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726096.071857548]: IMU: Raw IMU message used.[0m
+[0m[ INFO] [1697726096.072887711]: CON: Got HEARTBEAT, connected. FCU: ArduPilot[0m
+[0m[ INFO] [1697726096.078070517]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726097.088579016]: GF: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.088640057]: RP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.088685245]: WP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.088727848]: VER: 5.1: Capabilities         0x000000000000fbef[0m
+[0m[ INFO] [1697726097.088765423]: VER: 5.1: Flight software:     04050000 (a2b446c6)[0m
+[0m[ INFO] [1697726097.088794128]: VER: 5.1: Middleware software: 00000000 (        )[0m
+[0m[ INFO] [1697726097.088827023]: VER: 5.1: OS software:         00000000 (        )[0m
+[0m[ INFO] [1697726097.088860687]: VER: 5.1: Board hardware:      00000000[0m
+[0m[ INFO] [1697726097.088895747]: VER: 5.1: VID/PID:             0000:0000[0m
+[0m[ INFO] [1697726097.088920122]: VER: 5.1: UID:                 0000000000000000[0m
+[0m[ INFO] [1697726106.075409251]: HP: requesting home position[0m
+[0m[ INFO] [1697726106.105767023]: FCU: ArduCopter V4.5.0-dev (a2b446c6)[0m
+[0m[ INFO] [1697726106.109000759]: FCU: =0e9ed4eed254a7380b72036525c18f0[0m
+[0m[ INFO] [1697726106.110513598]: FCU: Frame: QUAD/X[0m
+[0m[ INFO] [1697726109.426627689]: PR: got an unsolicited param value idx=65535, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.437510059]: PR: got an unsolicited param value idx=12, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.539432779]: PR: got an unsolicited param value idx=13, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.667611544]: PR: got an unsolicited param value idx=14, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.759406742]: PR: got an unsolicited param value idx=15, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.873294517]: PR: got an unsolicited param value idx=16, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.994327787]: PR: got an unsolicited param value idx=17, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.116014425]: PR: got an unsolicited param value idx=18, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.254691711]: PR: got an unsolicited param value idx=19, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.409571971]: PR: got an unsolicited param value idx=20, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.524127083]: PR: got an unsolicited param value idx=21, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.655370149]: PR: got an unsolicited param value idx=22, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.782979286]: PR: got an unsolicited param value idx=23, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.903795210]: PR: got an unsolicited param value idx=24, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.034974790]: PR: got an unsolicited param value idx=25, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.078410543]: GF: mission received[0m
+[0m[ INFO] [1697726111.082131704]: RP: mission received[0m
+[0m[ INFO] [1697726111.082586023]: WP: mission received[0m
+[0m[ INFO] [1697726111.158737960]: PR: got an unsolicited param value idx=26, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.294776631]: PR: got an unsolicited param value idx=27, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.421702229]: PR: got an unsolicited param value idx=28, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.549637598]: PR: got an unsolicited param value idx6]: Built-in MAVLink package version: 2023.9.9[0m
+[0m[ INFO] [1697726096.065519562]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous matrixpilot paparazzi standard storm32 uAvionix ualberta[0m
+[0m[ INFO] [1697726096.065587099]: MAVROS started. MY ID 1.240, TARGET ID 2.1[0m
+[0m[ INFO] [1697726096.065675518]: udp0: Remote address: 127.0.0.1:37198[0m
+[0m[ INFO] [1697726096.066574589]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726096.066976737]: IMU: Raw IMU message used.[0m
+[0m[ INFO] [1697726096.067786551]: CON: Got HEARTBEAT, connected. FCU: ArduPilot[0m
+[0m[ INFO] [1697726096.072337010]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726097.082123347]: GF: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.082243474]: RP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.082305005]: WP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.082366466]: VER: 2.1: Capabilities         0x000000000000fbef[0m
+[0m[ INFO] [1697726097.082406974]: VER: 2.1: Flight software:     04050000 (a2b446c6)[0m
+[0m[ INFO] [1697726097.082442733]: VER: 2.1: Middleware software: 00000000 (        )[0m
+[0m[ INFO] [1697726097.082493787]: VER: 2.1: OS software:         00000000 (        )[0m
+[0m[ INFO] [1697726097.082537228]: VER: 2.1: Board hardware:      00000000[0m
+[0m[ INFO] [1697726097.082574454]: VER: 2.1: VID/PID:             0000:0000[0m
+[0m[ INFO] [1697726097.082611260]: VER: 2.1: UID:                 0000000000000000[0m
+[0m[ INFO] [1697726106.070238598]: HP: requesting home position[0m
+[0m[ INFO] [1697726106.094148662]: FCU: ArduCopter V4.5.0-dev (a2b446c6)[0m
+[0m[ INFO] [1697726106.098514531]: FCU: :0e9ed4eed254a7380b72036525c18f0[0m
+[0m[ INFO] [1697726106.100270488]: FCU: Frame: QUAD/X[0m
+[0m[ INFO] [1697726109.434387930]: PR: got an unsolicited param value idx=65535, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.527200022]: PR: got an unsolicited param value idx=12, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.649172452]: PR: got an unsolicited param value idx=13, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.747326938]: PR: got an unsolicited param value idx=14, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.859948345]: PR: got an unsolicited param value idx=15, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.980013749]: PR: got an unsolicited param value idx=16, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.102603091]: PR: got an unsolicited param value idx=17, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.232170726]: PR: got an unsolicited param value idx=18, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.381602572]: PR: got an unsolicited param value idx=19, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.509674829]: PR: got an unsolicited param value idx=20, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.642140891]: PR: got an unsolicited param value idx=21, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.770947882]: PR: got an unsolicited param value idx=22, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.890668410]: PR: got an unsolicited param value idx=23, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.024668334]: PR: got an unsolicited param value idx=24, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.072005369]: GF: mission received[0m
+[0m[ INFO] [1697726111.075286947]: RP: mission received[0m
+[0m[ INFO] [1697726111.075832480]: WP: mission received[0m
+[0m[ INFO] [1697726111.147276254]: PR: got an unsolicited param value idx=25, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.282514051]: PR: got an unsolicited param value idx=26, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.408704008]: PR: got an unsolicited param value idx=27, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.536640494]: PR: got an unsolicited param value idx=28, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.652489073]: PR: got an unsolicited param value id: Built-in MAVLink package version: 2023.9.9[0m
+[0m[ INFO] [1697726096.080796365]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous matrixpilot paparazzi standard storm32 uAvionix ualberta[0m
+[0m[ INFO] [1697726096.080822206]: MAVROS started. MY ID 1.240, TARGET ID 4.1[0m
+[0m[ INFO] [1697726096.080892886]: udp0: Remote address: 127.0.0.1:37234[0m
+[0m[ INFO] [1697726096.081255573]: CON: Got HEARTBEAT, connected. FCU: ArduPilot[0m
+[0m[ INFO] [1697726096.083993992]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726096.084130882]: IMU: Raw IMU message used.[0m
+[0m[ INFO] [1697726097.092491612]: GF: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.092534914]: RP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.092572838]: WP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.092618514]: VER: 4.1: Capabilities         0x000000000000fbef[0m
+[0m[ INFO] [1697726097.092662025]: VER: 4.1: Flight software:     04050000 (a2b446c6)[0m
+[0m[ INFO] [1697726097.092694013]: VER: 4.1: Middleware software: 00000000 (        )[0m
+[0m[ INFO] [1697726097.092750166]: VER: 4.1: OS software:         00000000 (        )[0m
+[0m[ INFO] [1697726097.092781664]: VER: 4.1: Board hardware:      00000000[0m
+[0m[ INFO] [1697726097.092816306]: VER: 4.1: VID/PID:             0000:0000[0m
+[0m[ INFO] [1697726097.092858839]: VER: 4.1: UID:                 0000000000000000[0m
+[0m[ INFO] [1697726106.082976031]: HP: requesting home position[0m
+[0m[ INFO] [1697726106.130177641]: FCU: ArduCopter V4.5.0-dev (a2b446c6)[0m
+[0m[ INFO] [1697726106.132889172]: FCU: <0e9ed4eed254a7380b72036525c18f0[0m
+[0m[ INFO] [1697726106.135788087]: FCU: Frame: QUAD/X[0m
+[0m[ INFO] [1697726109.419535344]: PR: got an unsolicited param value idx=65535, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.433014634]: PR: got an unsolicited param value idx=11, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.534419060]: PR: got an unsolicited param value idx=12, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.662501583]: PR: got an unsolicited param value idx=13, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.754657932]: PR: got an unsolicited param value idx=14, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.866805394]: PR: got an unsolicited param value idx=15, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.988936434]: PR: got an unsolicited param value idx=16, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.110736844]: PR: got an unsolicited param value idx=17, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.248337103]: PR: got an unsolicited param value idx=18, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.399509052]: PR: got an unsolicited param value idx=19, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.518112464]: PR: got an unsolicited param value idx=20, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.651000718]: PR: got an unsolicited param value idx=21, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.777251506]: PR: got an unsolicited param value idx=22, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.896545302]: PR: got an unsolicited param value idx=23, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.031329058]: PR: got an unsolicited param value idx=24, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.087667908]: GF: mission received[0m
+[0m[ INFO] [1697726111.088318692]: RP: mission received[0m
+[0m[ INFO] [1697726111.088542186]: WP: mission received[0m
+[0m[ INFO] [1697726111.155063384]: PR: got an unsolicited param value idx=25, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.288821028]: PR: got an unsolicited param value idx=26, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.415468656]: PR: got an unsolicited param value idx=27, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.545282135]: PR: got an unsolicited param value idx=28, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.660404571]: Built-in MAVLink package version: 2023.9.9[0m
+[0m[ INFO] [1697726096.046557079]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous matrixpilot paparazzi standard storm32 uAvionix ualberta[0m
+[0m[ INFO] [1697726096.046665473]: MAVROS started. MY ID 1.240, TARGET ID 3.1[0m
+[0m[ INFO] [1697726096.046751308]: udp0: Remote address: 127.0.0.1:35473[0m
+[0m[ INFO] [1697726096.047188028]: CON: Got HEARTBEAT, connected. FCU: ArduPilot[0m
+[0m[ INFO] [1697726096.051855193]: RC_CHANNELS message detected![0m
+[0m[ INFO] [1697726096.051989009]: IMU: Raw IMU message used.[0m
+[0m[ INFO] [1697726097.057024231]: GF: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.057150156]: RP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.057258899]: WP: Using MISSION_ITEM_INT[0m
+[0m[ INFO] [1697726097.057376722]: VER: 3.1: Capabilities         0x000000000000fbef[0m
+[0m[ INFO] [1697726097.057501389]: VER: 3.1: Flight software:     04050000 (a2b446c6)[0m
+[0m[ INFO] [1697726097.057587224]: VER: 3.1: Middleware software: 00000000 (        )[0m
+[0m[ INFO] [1697726097.057672431]: VER: 3.1: OS software:         00000000 (        )[0m
+[0m[ INFO] [1697726097.057789486]: VER: 3.1: Board hardware:      00000000[0m
+[0m[ INFO] [1697726097.057916877]: VER: 3.1: VID/PID:             0000:0000[0m
+[0m[ INFO] [1697726097.058046922]: VER: 3.1: UID:                 0000000000000000[0m
+[0m[ INFO] [1697726106.048628697]: HP: requesting home position[0m
+[0m[ INFO] [1697726106.089682990]: FCU: ArduCopter V4.5.0-dev (a2b446c6)[0m
+[0m[ INFO] [1697726106.093585599]: FCU: ;0e9ed4eed254a7380b72036525c18f0[0m
+[0m[ INFO] [1697726106.096532216]: FCU: Frame: QUAD/X[0m
+[0m[ INFO] [1697726109.426602406]: PR: got an unsolicited param value idx=65535, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.524350414]: PR: got an unsolicited param value idx=12, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.644496626]: PR: got an unsolicited param value idx=13, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.744040611]: PR: got an unsolicited param value idx=14, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.856437617]: PR: got an unsolicited param value idx=15, not resetting retries count 3[0m
+[0m[ INFO] [1697726109.977861371]: PR: got an unsolicited param value idx=16, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.100493944]: PR: got an unsolicited param value idx=17, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.226352571]: PR: got an unsolicited param value idx=18, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.377955723]: PR: got an unsolicited param value idx=19, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.505646226]: PR: got an unsolicited param value idx=20, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.633903912]: PR: got an unsolicited param value idx=21, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.764089157]: PR: got an unsolicited param value idx=22, not resetting retries count 3[0m
+[0m[ INFO] [1697726110.887457093]: PR: got an unsolicited param value idx=23, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.021601728]: PR: got an unsolicited param value idx=24, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.052223013]: GF: mission received[0m
+[0m[ INFO] [1697726111.052834057]: RP: mission received[0m
+[0m[ INFO] [1697726111.055600413]: WP: mission received[0m
+[0m[ INFO] [1697726111.143602306]: PR: got an unsolicited param value idx=25, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.277737863]: PR: got an unsolicited param value idx=26, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.403594256]: PR: got an unsolicited param value idx=27, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.527994033]: PR: got an unsolicited param value idx=28, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.647884276]: PR: got an unsolicited param value idx=29, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.773452x=29, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.778429416]: PR: got an unsolicited param value idx=30, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.883160888]: PR: got an unsolicited param value idx=31, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.972765366]: PR: got an unsolicited param value idx=32, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.062096764]: PR: got an unsolicited param value idx=33, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.159506880]: PR: got an unsolicited param value idx=34, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.287594993]: PR: got an unsolicited param value idx=35, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.391363001]: PR: got an unsolicited param value idx=36, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.513272925]: PR: got an unsolicited param value idx=37, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.645335025]: PR: got an unsolicited param value idx=38, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.774036068]: PR: got an unsolicited param value idx=39, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.889649911]: PR: got an unsolicited param value idx=40, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.994970567]: PR: got an unsolicited param value idx=41, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.110800431]: PR: got an unsolicited param value idx=42, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.219857754]: PR: got an unsolicited param value idx=43, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.330661047]: PR: got an unsolicited param value idx=44, not resetting retries count 3[0m
+[0m[ INFO] [1697726114.076638713]: PR: got an unsolicited param value idx=45, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.195752097]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.197019722]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.372317268]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.373028884]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.373652779]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.484516628]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.484799067]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.485144923]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.600664483]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.601050218]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.601345019]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.721762921]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.722328638]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.722712697]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.828381796]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.828675899]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.829342956]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.957504686]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.957755277]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.958132632]: PR: got an unsolicited param value idx=52, not resetting retries 2]: PR: got an unsolicited param value idx=29, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.785635324]: PR: got an unsolicited param value idx=30, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.891137358]: PR: got an unsolicited param value idx=31, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.978556562]: PR: got an unsolicited param value idx=32, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.069462120]: PR: got an unsolicited param value idx=33, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.166759792]: PR: got an unsolicited param value idx=34, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.296476611]: PR: got an unsolicited param value idx=35, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.405444117]: PR: got an unsolicited param value idx=36, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.523687217]: PR: got an unsolicited param value idx=37, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.654769928]: PR: got an unsolicited param value idx=38, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.782218920]: PR: got an unsolicited param value idx=39, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.897664585]: PR: got an unsolicited param value idx=40, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.004334791]: PR: got an unsolicited param value idx=41, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.119523718]: PR: got an unsolicited param value idx=42, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.230626282]: PR: got an unsolicited param value idx=43, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.340265316]: PR: got an unsolicited param value idx=44, not resetting retries count 3[0m
+[0m[ INFO] [1697726114.149227263]: PR: got an unsolicited param value idx=45, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.308741713]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.310490827]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.378771052]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.379597278]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.380090849]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.495125359]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.495914080]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.496586236]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.608416063]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.608770370]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.609111127]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.729256437]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.729738064]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.730300638]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.835603837]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.835834035]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.836254063]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.969470230]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.969694282]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.969853171]: PR: got an unsolicited px=28, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.660120317]: PR: got an unsolicited param value idx=29, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.785119683]: PR: got an unsolicited param value idx=30, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.890180319]: PR: got an unsolicited param value idx=31, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.978546505]: PR: got an unsolicited param value idx=32, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.069524559]: PR: got an unsolicited param value idx=33, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.166551175]: PR: got an unsolicited param value idx=34, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.295624403]: PR: got an unsolicited param value idx=35, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.405621445]: PR: got an unsolicited param value idx=36, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.523095100]: PR: got an unsolicited param value idx=37, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.654769928]: PR: got an unsolicited param value idx=38, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.781416231]: PR: got an unsolicited param value idx=39, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.897700832]: PR: got an unsolicited param value idx=40, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.004529020]: PR: got an unsolicited param value idx=41, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.119078408]: PR: got an unsolicited param value idx=42, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.230545196]: PR: got an unsolicited param value idx=43, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.340125354]: PR: got an unsolicited param value idx=44, not resetting retries count 3[0m
+[0m[ INFO] [1697726114.149724465]: PR: got an unsolicited param value idx=45, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.310170952]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.313311869]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.378843478]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.379466535]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.379985458]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.494574518]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.495372877]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.496261402]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.608896713]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.609581720]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.610376727]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.729086791]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.729335707]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.729568978]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.836241212]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.837039083]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.837940319]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.969880898]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.970699652]: PR: got an unsolicited param value idx=52, not resetting retries =29, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.664015732]: PR: got an unsolicited param value idx=30, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.792405211]: PR: got an unsolicited param value idx=31, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.895494637]: PR: got an unsolicited param value idx=32, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.985166372]: PR: got an unsolicited param value idx=33, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.074104562]: PR: got an unsolicited param value idx=34, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.174645887]: PR: got an unsolicited param value idx=35, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.299749528]: PR: got an unsolicited param value idx=36, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.410269892]: PR: got an unsolicited param value idx=37, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.532585317]: PR: got an unsolicited param value idx=38, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.662081506]: PR: got an unsolicited param value idx=39, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.788671866]: PR: got an unsolicited param value idx=40, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.902503281]: PR: got an unsolicited param value idx=41, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.010421347]: PR: got an unsolicited param value idx=42, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.123912984]: PR: got an unsolicited param value idx=43, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.235905400]: PR: got an unsolicited param value idx=44, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.344881148]: PR: got an unsolicited param value idx=45, not resetting retries count 3[0m
+[0m[ INFO] [1697726114.187480699]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.372858127]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.375306355]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.383664434]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.383798041]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.383885762]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.498013798]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.498311393]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.498585312]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.613553892]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.613953176]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.614927117]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.735165246]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.735493921]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.735851999]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.840978568]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.841277421]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.841583187]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.974894129]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.975277001]: PR: got an unsolicited param value idx=53, not resetting retries c014]: PR: got an unsolicited param value idx=30, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.877127900]: PR: got an unsolicited param value idx=31, not resetting retries count 3[0m
+[0m[ INFO] [1697726111.969536938]: PR: got an unsolicited param value idx=32, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.058079963]: PR: got an unsolicited param value idx=33, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.154797181]: PR: got an unsolicited param value idx=34, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.284287853]: PR: got an unsolicited param value idx=35, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.385783494]: PR: got an unsolicited param value idx=36, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.509676850]: PR: got an unsolicited param value idx=37, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.640797695]: PR: got an unsolicited param value idx=38, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.771799949]: PR: got an unsolicited param value idx=39, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.885188639]: PR: got an unsolicited param value idx=40, not resetting retries count 3[0m
+[0m[ INFO] [1697726112.991549306]: PR: got an unsolicited param value idx=41, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.107994125]: PR: got an unsolicited param value idx=42, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.213897890]: PR: got an unsolicited param value idx=43, not resetting retries count 3[0m
+[0m[ INFO] [1697726113.324347296]: PR: got an unsolicited param value idx=44, not resetting retries count 3[0m
+[0m[ INFO] [1697726114.043313370]: PR: got an unsolicited param value idx=45, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.150427756]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726115.152254044]: PR: got an unsolicited param value idx=46, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.369286491]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.370787597]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.371589309]: PR: got an unsolicited param value idx=47, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.481925294]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.482439329]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.482953642]: PR: got an unsolicited param value idx=48, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.596486977]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.596669612]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.596795676]: PR: got an unsolicited param value idx=49, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.710541260]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.710976722]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.711424058]: PR: got an unsolicited param value idx=50, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.824863245]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.825173831]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.825595046]: PR: got an unsolicited param value idx=51, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.953040061]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.953890103]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726116.954389331]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.068374401]: PR: got an unsolicitedcount 3[0m
+[0m[ INFO] [1697726116.971318029]: PR: got an unsolicited param value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.084231101]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.085051251]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.085954163]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.186520076]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.186868307]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.187186016]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.296503013]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.297148978]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.297642898]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.406176273]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.407357294]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.407989431]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.521415768]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.521896209]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.522674524]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.659188333]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.659910426]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.660401761]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.795950360]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.796166170]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.796403143]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.930003439]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.930336514]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.930536401]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.044231908]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.044591523]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.044837784]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.132569255]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.133049416]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.133434173]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.226651283]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.227057621]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.227590094]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.319811052]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.320161308]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [169aram value idx=52, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.084238225]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.085072203]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.085862322]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.186251675]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.186673099]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.187242588]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.296428003]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.297434980]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.298203098]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.406312184]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.406672846]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.407041610]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.520289712]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.520905017]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.521116497]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.659154949]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.659726183]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.660230021]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.795687825]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.796061408]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.796546318]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.929851115]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.930170221]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.930540591]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.044223108]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.044814387]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.045100389]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.133362795]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.134184481]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.135033825]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.226655613]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.227113425]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.227694367]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.320815445]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.321410705]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.321922574]: PR: got an unsolicited param value idx=64, not resetount 3[0m
+[0m[ INFO] [1697726116.976004890]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.087752236]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.088147190]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.088448906]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.192703084]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.193461983]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.194239320]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.300503052]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.300758044]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.300871955]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.412783219]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.413522004]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.413775599]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.526675820]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.527138101]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.527663031]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.666176056]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.666747011]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.667315312]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.801764743]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.802367616]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.802612341]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.936214803]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.936464906]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.936781777]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.050139321]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.050413729]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.050663832]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.136643046]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.136876526]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.137224757]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.234750326]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.235015933]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.235509993]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.325438470]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.325671811]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697 param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.068646225]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.069123872]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.173973031]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.174636526]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.174967017]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.283456670]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.283866710]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.284121004]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.393470896]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.393843850]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.394212544]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.505317766]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.505635755]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.505858550]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.644145637]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.644590808]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.645165884]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.781432663]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.781965904]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.782444668]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.912264648]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.912825755]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.913385047]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.032456962]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.032811827]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.033247080]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.122584279]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.122919309]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.123319711]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.209847251]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.210109227]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.210363521]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.308857234]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.309125076]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.309333554]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.413887703]: PR: got an unsolicited param value idx=65, not rescount 3[0m
+[0m[ INFO] [1697726117.074522698]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.074801715]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.075321756]: PR: got an unsolicited param value idx=53, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.179289305]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.179522925]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.179762482]: PR: got an unsolicited param value idx=54, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.287825193]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.288349285]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.288698074]: PR: got an unsolicited param value idx=55, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.397702460]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.398254837]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.398482940]: PR: got an unsolicited param value idx=56, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.512561528]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.512993918]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.513323710]: PR: got an unsolicited param value idx=57, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.650963087]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.651351266]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.651960984]: PR: got an unsolicited param value idx=58, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.786947287]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.787249771]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.787537169]: PR: got an unsolicited param value idx=59, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.918937106]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.919721078]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726117.920330237]: PR: got an unsolicited param value idx=60, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.037934011]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.038716237]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.039403059]: PR: got an unsolicited param value idx=61, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.127325477]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.127785104]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.128075575]: PR: got an unsolicited param value idx=62, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.214099837]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.214514906]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.214769688]: PR: got an unsolicited param value idx=63, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.314136771]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.314492963]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.314678881]: PR: got an unsolicited param value idx=64, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.417326564]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.417633378]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.417983355]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.512518655]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.512785869]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.513029407]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.609141172]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.609359636]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.609500018]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.712482871]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.712993343]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.713411694]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.809862401]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.810426232]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.810789548]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.900746102]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.901405896]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.901933619]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.988546436]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.989245900]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.990165365]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.072576371]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.073050945]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.073571754]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.188806502]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.189230650]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.189732323]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.292126341]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.292690033]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.293343401]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+ting retries count 3[0m
+[0m[ INFO] [1697726118.423868279]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.424338313]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.424784391]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.521426394]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.521923596]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.522330354]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.616312858]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.616579303]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.616828847]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.720299753]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.720739336]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.721372870]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.816162393]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.816667139]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.817191370]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.908167611]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.908761125]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.909240309]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.995055325]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.995496934]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.996106092]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.080237856]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.080803224]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.081398205]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.196418540]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.196640356]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.197040479]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.299441063]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.300134590]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.300546306]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+etting retries count 3[0m
+[0m[ INFO] [1697726118.414424785]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.415146388]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.508998638]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.509355389]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.509661155]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.604639810]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.605087076]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.605420360]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.707433741]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.708155065]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.709354316]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.803927470]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.804128893]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.804240430]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.893072046]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.893539705]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.894052342]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.985680695]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.986699056]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.987504539]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.068211620]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.068428059]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.068548536]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.185133392]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.185632760]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.186172775]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.289028307]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.289536824]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.289914108]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+726118.325830491]: PR: got an unsolicited param value idx=65, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.428072814]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.428225906]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.428448492]: PR: got an unsolicited param value idx=66, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.529506090]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.530019147]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.530482127]: PR: got an unsolicited param value idx=67, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.620530662]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.620776714]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.621054754]: PR: got an unsolicited param value idx=68, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.727265476]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.727504404]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.727768755]: PR: got an unsolicited param value idx=69, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.820607533]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.820833680]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.821137910]: PR: got an unsolicited param value idx=70, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.913840357]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.914487928]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.914816253]: PR: got an unsolicited param value idx=71, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.999032246]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.999274597]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726118.999548026]: PR: got an unsolicited param value idx=72, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.087329364]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.087705671]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.088019120]: PR: got an unsolicited param value idx=73, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.202280905]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.203182001]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.204072412]: PR: got an unsolicited param value idx=74, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.305501848]: PR: got an unsolicited param value idx=75, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.305931025]: PR: got an unsolicited param value idx=75, not resetting retries count 3[0m
+[0m[ INFO] [1697726119.306306004]: PR: got an unsolicited param value idx=75, not resetting retries count 3[0m
+
+auto-starting new master
+[1mprocess[master]: started with pid [16996][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/sanskar/Workspaces/swarm_ws/src/Object-Detection-via-ROS-Darknet/communication/launch/apm.launch http://localhost:11311
+[1msetting /run_id to aa848aa6-6e8c-11ee-a9b9-a7e096c865a6[0m
+[1mprocess[rosout-1]: started with pid [17021][0m
+started core service [/rosout]
+[1mprocess[drone1/mavros-2]: started with pid [17030][0m
+[1mprocess[drone2/mavros-3]: started with pid [17031][0m
+[1mprocess[drone3/mavros-4]: started with pid [17032][0m
+[1mprocess[drone4/mavros-5]: started with pid [17035][0m
+[1mprocess[drone5/mavros-6]: started with pid [17039][0m
+[drone5/mavros-6] killing on exit
+[drone4/mavros-5] killing on exit
+[drone3/mavros-4] killing on exit
+[drone2/mavros-3] killing on exit
+[drone1/mavros-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
